@@ -1,0 +1,67 @@
+---
+sidebar: sidebar 
+permalink: /task/task-kubernetes-discover-azure.html 
+keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, import kubernetes cluster, azure, aks, kubernetes support 
+summary: Kubernetes クラスタを Cloud Manager に追加して、 Azure への永続ボリュームのバックアップを開始できるようにします。 
+---
+= Azure Kubernetes クラスタを Cloud Manager に追加
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Kubernetes クラスタを検出または Cloud Manager にインポートして、永続ボリュームを Azure にバックアップできるようにすることができます。
+
+
+
+== クラスタを検出
+
+フルマネージドまたは自己管理型の Kubernetes クラスタを検出できます。管理対象クラスタが検出されている必要があります。インポートすることはできません。
+
+.手順
+. Canvas * で、 * 作業環境の追加 * をクリックします。
+. Microsoft Azure * > * Kubernetes Cluster * を選択し、 * Next * をクリックします。
++
+image:screenshot-discover-kubernetes-aks.png["選択した Microsoft Azure と Kubernetes クラスタを示す Add Working Environment ページのスクリーンショット"]
+
+. [Discover Cluster] を選択し、 [Next] をクリックします。
+. Kubernetes クラスタを選択し、 * Next * をクリックします。
++
+image:screenshot-k8s-aks-discover.png["選択した Kubernetes クラスタを表示する Kubernetes クラスタの検出ページのスクリーンショット"]
+
+
+
+Cloud Manager によって Kubernetes クラスタがキャンバスに追加されます。
+
+image:screenshot-k8s-aks-canvas.png["Kubernetes クラスタを示す Cloud Manager のキャンバスのスクリーンショット。"]
+
+
+
+== クラスタをインポートします
+
+Kubernetes 構成ファイルを使用して、自己管理型の Kubernetes クラスタをインポートできます。
+
+
+
+== 始める前に
+
+Kubernetes クラスタをインポートするには、クラスタロール YAML ファイルで指定したユーザの認証局、クライアントキー、およびクライアント証明書が必要です。Kubernetes クラスタ管理者は、 Kubernetes クラスタでユーザを作成する際にこれらの認定資格を取得します。
+
+.手順
+. Canvas * で、 * 作業環境の追加 * をクリックします。
+. Microsoft Azure * > * Kubernetes Cluster * を選択し、 * Next * をクリックします。
+. [ クラスタのインポート ] を選択し、 [ 次へ ] をクリックします。
+. Kubernetes 構成ファイルを YAML 形式でアップロードします。
++
+image:screenshot-k8s-aks-import-1.png["Kubernetes クラスタのインポートページのスクリーンショットで、構成ファイルと使用可能なクラスタの表を示しています。"]
+
+. Kubernetes クラスタ管理者から提供されたクラスタ証明書をアップロードします。
++
+image:screenshot-k8s-aks-import-2.png["認証局、クライアントキー、およびクライアント証明書のアップロードに使用されるクラスタ証明書ページのスクリーンショット。"]
+
+
+
+Cloud Manager によって Kubernetes クラスタがキャンバスに追加されます。

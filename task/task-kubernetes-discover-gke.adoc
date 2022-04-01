@@ -1,0 +1,67 @@
+---
+sidebar: sidebar 
+permalink: /task/task-kubernetes-discover-gke.html 
+keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, import kubernetes cluster, google, google cloud, gke, kubernetes support 
+summary: Kubernetes クラスタを検出または Cloud Manager にインポートすることで、永続ボリュームを Google Cloud にバックアップできます。 
+---
+= Cloud Manager に Google Cloud Kubernetes クラスタを追加
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Kubernetes クラスタを検出または Cloud Manager にインポートすることで、永続ボリュームを Google Cloud にバックアップできます。
+
+
+
+== クラスタを検出
+
+フルマネージドまたは自己管理型の Kubernetes クラスタを検出できます。管理対象クラスタが検出されている必要があります。インポートすることはできません。
+
+.手順
+. Canvas * で、 * 作業環境の追加 * をクリックします。
+. Google Cloud Platform * > * Kubernetes Cluster * を選択し、 * Next * をクリックします。
++
+image:screenshot-discover-kubernetes-gke.png["Google Cloud Platform と Kubernetes Cluster が選択された作業環境の追加ページのスクリーンショット。"]
+
+. [Discover Cluster] を選択し、 [Next] をクリックします。
+. 別の Google Cloud プロジェクトの Kubernetes クラスタを選択するには、 * プロジェクトの編集 * をクリックし、使用可能なプロジェクトを選択します。
++
+image:screenshot-k8s-gke-change-project.png["利用可能な Google Cloud プロジェクトのドロップダウンを示す [ プロジェクトの編集 ] ページのスクリーンショット。"]
+
+. Kubernetes クラスタを選択し、 * Next * をクリックします。
++
+image:screenshot-k8s-gke-discover.png["選択した Kubernetes クラスタを表示する Kubernetes クラスタの検出ページのスクリーンショット"]
+
+
+
+Cloud Manager によって Kubernetes クラスタがキャンバスに追加されます。
+
+image:screenshot-k8s-gke-canvas.png["Kubernetes クラスタを示す Cloud Manager のキャンバスのスクリーンショット。"]
+
+
+
+== クラスタをインポートします
+
+Kubernetes 構成ファイルを使用して、自己管理型の Kubernetes クラスタをインポートできます。
+
+
+
+== 始める前に
+
+Kubernetes クラスタをインポートするには、クラスタロール YAML ファイルで指定したユーザの認証局、クライアントキー、およびクライアント証明書が必要です。Kubernetes クラスタ管理者は、 Kubernetes クラスタでユーザを作成する際にこれらの認定資格を取得します。
+
+.手順
+. Canvas * で、 * 作業環境の追加 * をクリックします。
+. Google Cloud Platform * > * Kubernetes Cluster * を選択し、 * Next * をクリックします。
+. [ クラスタのインポート ] を選択し、 [ 次へ ] をクリックします。
+. Kubernetes 構成ファイルを YAML 形式でアップロードします。
++
+image:screenshot-k8s-gke-import-1.png["Kubernetes クラスタのインポートページのスクリーンショットで、構成ファイルと使用可能なクラスタの表を示しています。"]
+
+
+
+Cloud Manager によって Kubernetes クラスタがキャンバスに追加されます。

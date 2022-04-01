@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: concept-kubernetes.html 
+keywords: kubernetes, k8s, back up kubernetes, back up k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, azure, aks, back up persistent volumes, persistent volumes, kubernetes support 
+summary: 高度なデータ管理のために、マネージド Kubernetes クラスタを Cloud Manager に追加 
+---
+= Kubernetes の概要
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+高度なデータ管理のために、マネージド Kubernetes クラスタを Cloud Manager に追加
+
+
+
+== の機能
+
+* キャンバスにクラスタを追加して、ハイブリッドクラウドインフラストラクチャの一部として表示および管理します
+* Cloud Backup Service を使用して永続ボリュームをバックアップする
++
+image:screenshot-kubernetes-backup.png["Cloud Backup Service の Kubernetes ページのスクリーンショット。 Kubernetes クラスタの 5 つのバックアップジョブが表示されます。"]
+
+
+
+
+
+== サポートされる Kubernetes 環境
+
+Cloud Manager は、 Amazon Elastic Kubernetes Service （ Amazon EKS ）および Microsoft Azure Kubernetes Service （ AKS ）で実行されているマネージド Kubernetes クラスタをサポートします。
+
+
+
+== サポートされるバックエンドストレージ
+
+ネットアップの Astra Trident は各 Kubernetes クラスタにインストールする必要があり、 Cloud Volumes ONTAP はクラスタのバックエンドストレージとして設定する必要があります。
+
+
+
+== コスト
+
+Cloud Manager で Kubernetes クラスタを検出する際に料金は発生しませんが、 Cloud Backup Service を使用して永続ボリュームをバックアップした場合に料金が発生します。

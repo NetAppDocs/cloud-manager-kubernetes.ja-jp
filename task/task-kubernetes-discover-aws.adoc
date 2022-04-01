@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: /task/task-kubernetes-discover-aws.html 
+keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, kubernetes support, import kubernetes cluster, import, amazon s3, amazon, aws 
+summary: Amazon Elastic Kubernetes Service （ Amazon EKS ）クラスタを Cloud Manager に追加して、永続ボリュームの Amazon S3 へのバックアップを開始できるようにします。 
+---
+= Cloud Manager に Amazon Kubernetes クラスタを追加
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Kubernetes clusers を Cloud Manager で検出またはインポートして、永続ボリュームを Amazon S3 にバックアップできるようにすることができます。
+
+
+
+== クラスタを検出
+
+フルマネージドまたは自己管理型の Kubernetes クラスタを検出できます。管理対象クラスタが検出されている必要があります。インポートすることはできません。
+
+.手順
+. Canvas * で、 * 作業環境の追加 * をクリックします。
+. Amazon Web Services * > * Kubernetes Cluster * を選択し、 * Next * をクリックします。
++
+image:screenshot-discover-kubernetes-aws-1.png["選択した AWS リージョンと Kubernetes クラスタを表示する Kubernetes クラスタの検出ページのスクリーンショット"]
+
+. [Discover Cluster] を選択し、 [Next] をクリックします。
+. AWS リージョンを選択し、 Kubernetes クラスタを選択して、 * Next * をクリックします。
++
+image:screenshot-discover-kubernetes-aws-2.png["選択した AWS リージョンと Kubernetes クラスタを表示する Kubernetes クラスタの検出ページのスクリーンショット"]
+
+
+
+Cloud Manager によって Kubernetes クラスタがキャンバスに追加されます。
+
+image:screenshot-kubernetes-canvas.png["Kubernetes クラスタを示す Cloud Manager のキャンバスのスクリーンショット。"]
+
+
+
+== クラスタをインポートします
+
+Kubernetes 構成ファイルを使用して、自己管理型の Kubernetes クラスタをインポートできます。
+
+.手順
+. Canvas * で、 * 作業環境の追加 * をクリックします。
+. Amazon Web Services * > * Kubernetes Cluster * を選択し、 * Next * をクリックします。
+. [ クラスタのインポート ] を選択し、 [ 次へ ] をクリックします。
+. Kubernetes 構成ファイルを YAML 形式でアップロードします。
++
+image:screenshot-k8s-aks-import-1.png["Kubernetes クラスタのインポートページのスクリーンショットで、構成ファイルと使用可能なクラスタの表を示しています。"]
+
+. Kubernetes クラスタを選択し、 * Next * をクリックします。
+
+
+Cloud Manager によって Kubernetes クラスタがキャンバスに追加されます。

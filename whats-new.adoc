@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes' 
+summary: Cloud Manager の Kubernetes の新機能をご確認ください。 
+---
+= Cloud Manager の Kubernetes の新機能
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager の Kubernetes の新機能をご確認ください。
+
+
+
+== 2022 年 2 月 27 日
+
+
+
+=== Google Cloud で Kubernetes クラスタがサポートされます
+
+Cloud Manager を使用して、 Google Cloud で管理対象 Google Kubernetes Engine （ GKE ）クラスタと自己管理型 Kubernetes クラスタを追加および管理できるようになりました。
+
+link:kubernetes-reqs-gke.html["Google Cloud で Kubernetes クラスタを使用する方法をご確認ください"]。
+
+
+
+== 2022 年 1 月 11 日
+
+
+
+=== Azure で Kubernetes クラスタがサポートされます
+
+Cloud Manager を使用して、 Azure で管理対象 Azure Kubernetes クラスタ（ AKS ）と自己管理型 Kubernetes クラスタを追加および管理できるようになりました。
+
+link:kubernetes-reqs-aks.html["Azure での Kubernetes クラスタの使用の開始"]
+
+
+
+== 2021 年 11 月 28 日
+
+
+
+=== AWS での Kubernetes クラスタのサポート
+
+高度なデータ管理のために、管理対象 Kubernetes クラスタを Cloud Manager のキャンバスに追加できるようになりました。
+
+* Amazon EKS クラスタを検出します
+* Cloud Backup を使用して永続ボリュームをバックアップする
+
+
+link:concept-kubernetes.html["Kubernetes のサポートの詳細については、こちらをご覧ください"]。
+
+
+TIP: 既存の Kubernetes サービス（ * K8s * タブで利用可能）は廃止され、今後のリリースで削除される予定です。
