@@ -20,7 +20,7 @@ sidebar:
     - title: Kubernetes のデータ管理について説明します
       url: "/concept-kubernetes.html"
     - title: クイックスタート
-      url: "/task-k8s-quick-start.html"
+      url: "/task/task-k8s-quick-start.html"
   - title: 要件
     entries:
     - title: AWS 上の Kubernetes クラスタ
@@ -87,15 +87,15 @@ homepage:
   - title: Kubernetes クラスタを管理
     links:
     - title: Astra Trident をインストール
-      url: "/task-k8s-manage-trident.html"
+      url: "/task/task-k8s-manage-trident.html"
     - title: ストレージクラスを管理する
-      url: "/task-k8s-manage-storage-classes.html"
+      url: "/task/task-k8s-manage-storage-classes.html"
     - title: 永続ボリュームを表示します
-      url: "/task-k8s-manage-persistent-volumes.html"
+      url: "/task/task-k8s-manage-persistent-volumes.html"
     - title: クラスタを削除
-      url: "/task-k8s-manage-remove-cluster.html"
+      url: "/task/task-k8s-manage-remove-cluster.html"
     - title: データサービスを有効化
-      url: "/task/task-kubernetes-enable-services.html"
+      url: "/task/task/task-kubernetes-enable-services.html"
   - title: Cloud Manager のヘルプを参照してください
     links:
     - title: サポートに登録します
