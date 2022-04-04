@@ -95,7 +95,7 @@ homepage:
     - title: クラスタを削除
       url: "/task/task-k8s-manage-remove-cluster.html"
     - title: データサービスを有効化
-      url: "/task/task/task-kubernetes-enable-services.html"
+      url: "/task/task-kubernetes-enable-services.html"
   - title: Cloud Manager のヘルプを参照してください
     links:
     - title: サポートに登録します
