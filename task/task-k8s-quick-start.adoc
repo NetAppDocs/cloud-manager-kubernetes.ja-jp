@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: /task/task-k8s-quick-start.html 
+keywords: kubernetes, persistent volumes, containers, persistent storage, kubeconfig, trident, kubernetes cluster, storage classes, classes, cvo-single, cvo-ha, thick provisioning, trident_trident, connect, disconnect, provision 
+summary: Kubernetes クラスタを Cloud Manager に追加して、いくつかの高度なデータ管理手順をすばやく実行 
+---
+= Kubernetes クラスタの導入を開始する
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Kubernetes クラスタを Cloud Manager に追加して、いくつかの高度なデータ管理手順をすばやく実行
+
+
+
+== クイックスタート
+
+これらの手順を実行すると、すぐに作業を開始できます。
+
+[role="quick-margin-para"]
+ご使用の環境がクラスタタイプの前提条件を満たしていることを確認してください。
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/occm/kubernetes-reqs-aws.html["AWS での Kubernetes クラスタの要件"]
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/occm/kubernetes-reqs-aks.html["Azure での Kubernetes クラスタの要件"]
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/occm/kubernetes-reqs-gke.html["Google Cloud の Kubernetes クラスタの要件"]
+
+[role="quick-margin-para"]
+Kubernetes クラスタを追加し、 Cloud Manager を使用して作業環境に接続できます。
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/occm/task-kubernetes-discover-aws.html["Amazon Kubernetes クラスタを追加"]
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/occm/task-kubernetes-discover-azure.html["Azure Kubernetes クラスタを追加"]
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/occm/task-kubernetes-discover-gke.html["Google Cloud Kubernetes クラスタを追加"]
+
+[role="quick-margin-para"]
+Kubernetes の標準のインターフェイスと構成要素を使用して、永続ボリュームを要求および管理できます。Cloud Manager では、 NFS ストレージクラスと iSCSI ストレージクラスが作成されます。このクラスは、永続的ボリュームのプロビジョニング時に使用できます。
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-postdeployment.html#step-3-provision-your-first-volume["Trident を使用した最初のボリュームのプロビジョニングの詳細をご確認ください"^]。
+
+[role="quick-margin-para"]
+Kubernetes クラスタを Cloud Manager に追加したら、 Cloud Manager のリソースページでクラスタを管理できます。
+
+[role="quick-margin-para"]
+link:task-k8s-manage-trident.html["Kubernetes クラスタを管理する方法について説明します。"]

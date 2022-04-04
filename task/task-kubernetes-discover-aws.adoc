@@ -13,7 +13,7 @@ summary: Amazon Elastic Kubernetes Service （ Amazon EKS ）クラスタを Clo
 
 
 [role="lead"]
-Kubernetes clusers を Cloud Manager で検出またはインポートして、永続ボリュームを Amazon S3 にバックアップできるようにすることができます。
+Kubernetes クラスタを検出または Cloud Manager にインポートすることで、永続ボリュームを Amazon S3 にバックアップできます。
 
 
 

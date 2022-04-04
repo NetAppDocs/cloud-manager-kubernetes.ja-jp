@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: /task/task-k8s-manage-persistent-volumes.html 
+keywords: kubernetes, k8s, view persistent volume 
+summary: 管理対象の Kubernetes クラスタを Canvas に追加すると、 Cloud Manager を使用して接続されている永続ボリュームを表示できます。 
+---
+= 永続ボリュームを表示します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+管理対象の Kubernetes クラスタを Canvas に追加すると、 Cloud Manager を使用して永続ボリュームを表示できます。
+
+.手順
+. キャンバスで Kubernetes 作業環境をダブルクリックするか、 * 作業環境の入力 * をクリックします。
+. 概要 * タブで * ボリュームの表示 * をクリックするか、 * 永続ボリューム * タブをクリックします。永続ボリュームが設定されていない場合は、を参照してください link:https://docs.netapp.com/us-en/trident/trident-concepts/provisioning.html["プロビジョニング"^] Astra Trident でのボリュームのプロビジョニングの詳細については、
+
+
+設定されている永続ボリュームの表が表示されます。
+
+image:screenshot-k8s-volume-table.png["永続ボリュームの表のスクリーンショット。"]

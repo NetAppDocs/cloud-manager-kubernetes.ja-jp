@@ -21,7 +21,11 @@ Cloud Manager を使用して、 Google で管理対象 Google Kubernetes Engine
 
 == 要件
 
-Astra Trident:: Kubernetes クラスタには、 NetApp Astra Trident が導入されている必要があります。Helm を使用して、最新バージョンの Astra Trident のいずれかをインストールします。 https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html#deploy-the-trident-operator-by-using-helm["Helm を使用してインストール手順については、 Astra Trident のドキュメントを参照してください"^]。
+Astra Trident:: 最新バージョンの 4 つの Astra Trident が必要です。Trident は Cloud Manager から直接インストールできます。お勧めします link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["前提条件を確認します"^] Astra Trident をインストールする前に
+
+
+Astra Trident をアップグレードするには、 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-operator.html["オペレータにアップグレードしてください"^]。
+
 Cloud Volumes ONTAP:: Cloud Volumes ONTAP は、 Kubernetes クラスタと同じテナンシーアカウント、ワークスペース、コネクタで Cloud Manager に配置する必要があります。 https://docs.netapp.com/us-en/trident/trident-use/backends.html["設定手順については、 Astra Trident のドキュメントを参照してください"^]。
 Cloud Manager Connector の略:: 必要な権限を持つ Connector が Google で実行されている必要があります。 <<Prepare a Connector,詳細は以下をご覧ください>>。
 ネットワーク接続:: Kubernetes クラスタとコネクタの間、および Kubernetes クラスタと Cloud Volumes ONTAP の間にはネットワーク接続が必要です。 <<Review networking requirements,詳細は以下をご覧ください>>。
@@ -40,8 +44,8 @@ Kubernetes クラスタを検出および管理するには、 Google の Cloud 
 
 次のリンクのいずれかの手順に従います。
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Cloud Manager からコネクタを作成します"^] （推奨）
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["既存の Linux ホストにコネクタをインストールします"^]
+* link:task_creating_connectors_gcp.html["Cloud Manager からコネクタを作成します"] （推奨）
+* link:task_installing_linux.html["既存の Linux ホストにコネクタをインストールします"]
 
 
 
@@ -89,6 +93,17 @@ RBAC の検証は、 Active Directory （ AD ）が有効になっている Kube
 
 コネクタがクラスタを検出して管理できるように、各 Kubernetes クラスタで Connector ロールを承認する必要があります。
 
+バックアップとリストア:: バックアップとリストアに必要なのは、基本的な許可だけです。
+ストレージクラスを追加する:: Cloud Manager を使用してストレージクラスを追加するには、拡張された許可が必要です。
+Astra Trident をインストールします:: Cloud Manager が Astra Trident をインストールするための完全な権限を付与する必要があります。
++
+--
+
+NOTE: Astra Trident をインストールすると、 Cloud Manager は Astra Trident バックエンドと、 Astra Trident がストレージクラスタと通信するために必要なクレデンシャルを含む Kubernetes シークレットをインストールします。
+
+--
+
+
 YAML ファイルで「 Subjects:name:` 」を設定するには、 Cloud Manager の一意の ID を知っている必要があります。
 
 一意の ID は、次の 2 つの方法のいずれかで確認できます。
@@ -108,8 +123,85 @@ image:screenshot-gke-unique-id.png["Cloud Console のサービスアカウント
 
 クラスタロールとロールバインドを作成します。
 
-. 次のテキストを含む YAML ファイルを作成します。「 Subjects:kind 」変数をユーザ名に置き換え、「 Subjects:user:` 」を認証されたサービスアカウントの一意の ID に置き換えます。
+. 許可要件に基づいて次のテキストを含む YAML ファイルを作成します。「 Subjects:kind 」変数をユーザ名に置き換え、「 Subjects:user:` 」を認証されたサービスアカウントの一意の ID に置き換えます。
 +
+[role="tabbed-block"]
+====
+.バックアップ / リストア
+--
+Kubernetes クラスタのバックアップとリストアを有効にするための基本的な許可を追加する。
+
+[source, yaml]
+----
+NEED FROM apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+    name: cloudmanager-access-clusterrole
+rules:
+    - apiGroups:
+          - ''
+      resources:
+          - namespaces
+      verbs:
+          - list
+    - apiGroups:
+          - ''
+      resources:
+          - persistentvolumes
+      verbs:
+          - list
+    - apiGroups:
+          - ''
+      resources:
+          - pods
+          - pods/exec
+      verbs:
+          - get
+          - list
+    - apiGroups:
+          - ''
+      resources:
+          - persistentvolumeclaims
+      verbs:
+          - list
+          - create
+    - apiGroups:
+          - storage.k8s.io
+      resources:
+          - storageclasses
+      verbs:
+          - list
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentbackends
+      verbs:
+          - list
+    - apiGroups:
+          - trident.netapp.io
+      resources:
+          - tridentorchestrators
+      verbs:
+          - get
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+    name: k8s-access-binding
+subjects:
+    - kind: User
+      name:
+      apiGroup: rbac.authorization.k8s.io
+roleRef:
+    kind: ClusterRole
+    name: cloudmanager-access-clusterrole
+    apiGroup: rbac.authorization.k8s.io
+----
+--
+.ストレージクラス
+--
+拡張された権限を追加し、 Cloud Manager を使用してストレージクラスを追加します。
+
 [source, yaml]
 ----
 apiVersion: rbac.authorization.k8s.io/v1
@@ -124,25 +216,34 @@ rules:
           - namespaces
           - persistentvolumeclaims
           - persistentvolumes
+          - pods
+          - pods/exec
       verbs:
           - get
           - list
           - create
+          - delete
     - apiGroups:
           - storage.k8s.io
       resources:
           - storageclasses
       verbs:
           - get
+          - create
           - list
+          - delete
+          - patch
     - apiGroups:
           - trident.netapp.io
       resources:
           - tridentbackends
           - tridentorchestrators
+          - tridentbackendconfigs
       verbs:
           - get
           - list
+          - create
+          - delete
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
@@ -150,13 +251,24 @@ metadata:
     name: k8s-access-binding
 subjects:
     - kind: User
-      name: "uniqueID"
+      name:
       apiGroup: rbac.authorization.k8s.io
 roleRef:
     kind: ClusterRole
     name: cloudmanager-access-clusterrole
     apiGroup: rbac.authorization.k8s.io
 ----
+--
+.Trident をインストール
+--
+コマンドラインを使用して完全な権限を付与し、 Cloud Manager が Astra Trident をインストールできるようにします。
+
+[source, cli]
+----
+kubectl create clusterrolebinding test --clusterrole cluster-admin --user <Unique ID>
+----
+--
+====
 . クラスタに構成を適用します。
 +
 [source, kubectl]

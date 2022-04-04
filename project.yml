@@ -19,6 +19,8 @@ sidebar:
     entries:
     - title: Kubernetes のデータ管理について説明します
       url: "/concept-kubernetes.html"
+    - title: クイックスタート
+      url: "/task-k8s-quick-start.html"
   - title: 要件
     entries:
     - title: AWS 上の Kubernetes クラスタ
@@ -35,8 +37,19 @@ sidebar:
       url: "/task/task-kubernetes-discover-azure.html"
     - title: Google Cloud にクラスタを追加します
       url: "/task/task-kubernetes-discover-gke.html"
-  - title: Kubernetes クラスタでデータサービスを有効化
-    url: "/task/task-kubernetes-enable-services.html"
+  - title: Kubernetes クラスタを管理
+    url: "/concept-manage-k8s.html"
+    entries:
+    - title: Astra Trident をインストール
+      url: "/task/task-k8s-manage-trident.html"
+    - title: ストレージクラスを管理する
+      url: "/task/task-k8s-manage-storage-classes.html"
+    - title: 永続ボリュームを表示します
+      url: "/task/task-k8s-manage-persistent-volumes.html"
+    - title: クラスタを削除
+      url: "/task/task-k8s-manage-remove-cluster.html"
+    - title: ネットアップのクラウドデータサービスを実現
+      url: "/task/task-kubernetes-enable-services.html"
   - title: 知識とサポート
     entries:
     - title: サポートに登録します
@@ -53,6 +66,8 @@ homepage:
       url: "/whats-new.html"
     - title: Kubernetes のデータ管理について説明します
       url: "/concept-kubernetes.html"
+    - title: クイックスタート
+      url: "/task-k8s-quick-start.html"
   - title: 要件
     links:
     - title: AWS 上の Kubernetes クラスタ
@@ -69,8 +84,16 @@ homepage:
       url: "/task/task-kubernetes-discover-azure.html"
     - title: Google Cloud にクラスタを追加します
       url: "/task/task-kubernetes-discover-gke.html"
-  - title: データサービスを有効化
+  - title: Kubernetes クラスタを管理
     links:
+    - title: Astra Trident をインストール
+      url: "/task-k8s-manage-trident.html"
+    - title: ストレージクラスを管理する
+      url: "/task-k8s-manage-storage-classes.html"
+    - title: 永続ボリュームを表示します
+      url: "/task-k8s-manage-persistent-volumes.html"
+    - title: クラスタを削除
+      url: "/task-k8s-manage-remove-cluster.html"
     - title: データサービスを有効化
       url: "/task/task-kubernetes-enable-services.html"
   - title: Cloud Manager のヘルプを参照してください

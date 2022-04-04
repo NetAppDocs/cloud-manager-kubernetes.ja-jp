@@ -4,7 +4,7 @@ permalink: /task/task-kubernetes-enable-services.html
 keywords: kubernetes, k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, kubernetes support 
 summary: 管理対象の Kubernetes クラスタを Canvas に追加すると、ネットアップのクラウドデータサービスを使用して高度なデータ管理を行うことができます。 
 ---
-= ネットアップのクラウドデータサービスを Kubernetes クラスタで使用できます
+= ネットアップのクラウドデータサービスを Kubernetes クラスタで使用
 :hardbreaks:
 :nofooter: 
 :icons: font
@@ -17,6 +17,6 @@ summary: 管理対象の Kubernetes クラスタを Canvas に追加すると、
 
 現時点では、 Kubernetes クラスタで Cloud Backup がサポートされます。Cloud Backup を使用して、永続ボリュームをオブジェクトストレージにバックアップできます。
 
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-kubernetes-to-s3.html["永続ボリュームのバックアップ方法については、 Cloud Backup のドキュメントを参照してください"^]。
+link:task_backup_kubernetes_to_s3.html["永続ボリュームのバックアップ方法については、 Cloud Backup のドキュメントを参照してください"]。
 
 image:screenshot-kubernetes-backup.png["Cloud Backup Service の Kubernetes ページのスクリーンショット。 Kubernetes クラスタの 5 つのバックアップジョブが表示されます。"]

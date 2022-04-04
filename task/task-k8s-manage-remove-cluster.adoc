@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: /task/task-k8s-manage-remove-cluster.html 
+keywords: kubernetes, k8s, remove cluster 
+summary: 管理対象 - Kubernetes クラスタをキャンバスに追加したら、 Cloud Manager を使用してワークスペースからクラスタを削除できます。 
+---
+= Kubernetes クラスタをワークスペースから削除
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+管理対象 - Kubernetes クラスタをキャンバスに追加したら、 Cloud Manager を使用してワークスペースからクラスタを削除できます。
+
+.手順
+. キャンバスで Kubernetes 作業環境をダブルクリックするか、 * 作業環境の入力 * をクリックします。
+. ページの右上にあるアクションメニューを選択し、 * ワークスペースから削除 * をクリックします。
++
+image:screenshot-k8s-remove-cluster.png["Kubernetes クラスタをワークスペースから削除するメニューを示すスクリーンショット。"]
+
+. ワークスペースからのクラスタの削除を確認するには、 * Remove * をクリックします。このクラスタはいつでも再検出できます。
++
+image:screenshot-k8s-confirm-remove-cluster.png["Kubernetes クラスタをワークスペースから削除することを確認するページのスクリーンショット。"]
+
+
+
+Kubernetes クラスタがワークスペースから削除され、キャンバスに表示されなくなります。

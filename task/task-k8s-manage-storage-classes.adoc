@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+permalink: /task/task-k8s-manage-storage-classes.html 
+keywords: kubernetes, k8s, add storage class, remove storage class 
+summary: 管理対象の Kubernetes クラスタを Canvas に追加すると、 Cloud Manager を使用してストレージクラスを管理できるようになります。 
+---
+= ストレージクラスを管理する
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+管理対象の Kubernetes クラスタを Canvas に追加すると、 Cloud Manager を使用してストレージクラスを管理できるようになります。
+
+
+NOTE: ストレージクラスが定義されていない場合は、「必須」の操作がクラスタに表示されます。
+
+
+
+== ストレージクラスを追加する
+
+.手順
+. キャンバスで Kubernetes 作業環境をダブルクリックするか、 * 作業環境の入力 * をクリックします。
+. 最新の 4 つのバージョンの Astra Trident がインストールされていることを確認
+. Add Storage Class * をクリックして、 Kubernetes クラスタのストレージクラスを定義します。
++
+image:screenshot-k8s-add-storage-class.png["ストレージクラスの追加ボタンを示す Kubernetes リソースページのスクリーンショット"]
+
+. ストレージクラスの名前を指定し、定義オプションを選択して、 * 次へ * をクリックします。
++
+image:screenshot-k8s-define-storage-class.png["Kubernetes ストレージクラスの定義オプションを示すスクリーンショット"]
+
+. クラスタに接続する作業環境を選択します。[ 追加（ Add ） ] をクリックします。
++
+image:screenshot-k8s-we-storage-class.png["Kubernetes クラスタ用の作業環境の選択を示すスクリーンショット。"]
+
+
+
+をクリックすると、 Kubernetes クラスタのリソースページでストレージクラスを表示できます。
+
+image:screenshot-k8s-view-storage-class.png["Kubernetes リソースページの「ストレージクラスの表示」を示すスクリーンショット。"]
+
+
+
+== 作業環境の詳細を表示
+
+.手順
+. キャンバスで Kubernetes 作業環境をダブルクリックするか、 * 作業環境の入力 * をクリックします。
+. [ * ストレージクラス * ] タブをクリックします。
+. 情報アイコンをクリックして、作業環境の詳細を確認します。
+
+
+作業環境の詳細パネルが開きます。
+
+image:screenshot-k8s-info-storage-class.png["Kubernetes クラスタの作業環境の詳細のスクリーンショット。"]
+
+
+
+== デフォルトのストレージクラスを設定
+
+.手順
+. キャンバスで Kubernetes 作業環境をダブルクリックするか、 * 作業環境の入力 * をクリックします。
+. [ * ストレージクラス * ] タブをクリックします。
+. ストレージクラスのアクションメニューをクリックし、 * デフォルトに設定 * をクリックします。
++
+image:screenshot-k8s-default-storage-class.png["デフォルトのストレージクラスを設定する操作メニューのスクリーンショット。"]
+
+
+
+選択したストレージクラスがデフォルトとして設定されます。
+
+image:screenshot-k8s-default-set-storage-class.png["デフォルトのストレージクラスを示すスクリーンショット。"]
+
+
+
+== ストレージクラスを削除する
+
+.手順
+. キャンバスで Kubernetes 作業環境をダブルクリックするか、 * 作業環境の入力 * をクリックします。
+. [ * ストレージクラス * ] タブをクリックします。
+. ストレージクラスのアクションメニューをクリックし、 * デフォルトに設定 * をクリックします。
++
+image:screenshot-k8s-remove-storage-class.png["ストレージクラスを削除する操作メニューのスクリーンショット。"]
+
+. [ 削除 ] をクリックして、ストレージクラスの削除を確認します。
++
+image:screenshot-k8s-remove-confirm-storage-class.png["ストレージクラスを削除する確認画面のスクリーンショット。"]
+
+
+
+選択したストレージクラスが削除されます。

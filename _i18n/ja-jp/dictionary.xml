@@ -20,15 +20,10 @@
   <block id="d5f64dd836c164f17e32528a31fdeea5" category="inline-link-macro">Kubernetes のサポートの詳細については、こちらをご覧ください</block>
   <block id="541ec813f320b6a90ccb3d382d774f7e" category="paragraph"><block ref="b46c52759a0e98b71be9f6aed99e1b0c" category="inline-link-macro-rx"></block>。</block>
   <block id="5629dc3c8dacdcb31e6d3bf6d7586e32" category="admonition">既存の Kubernetes サービス（ * K8s * タブで利用可能）は廃止され、今後のリリースで削除される予定です。</block>
-  <block id="ccbd79a5bcab3e453f949ff4117b4275" category="summary">高度なデータ管理のために、マネージド Kubernetes クラスタを Cloud Manager に追加</block>
-  <block id="4f64237bee72bb58ff4152fa48632885" category="doc">Kubernetes の概要</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">の機能</block>
-  <block id="c5ec1386b558adcf3d52ae94e379e003" category="list-text">キャンバスにクラスタを追加して、ハイブリッドクラウドインフラストラクチャの一部として表示および管理します</block>
-  <block id="e93ee6ce2f667e494d48b99fc2c22728" category="list-text">Cloud Backup Service を使用して永続ボリュームをバックアップする</block>
   <block id="a0d9f3ae32f1b7df23e0071308b6cbe5" category="inline-image-macro">Cloud Backup Service の Kubernetes ページのスクリーンショット。 Kubernetes クラスタの 5 つのバックアップジョブが表示されます。</block>
   <block id="fdd5390b518e6b0ee63a9f6d25352e4d" category="paragraph"><block ref="fdd5390b518e6b0ee63a9f6d25352e4d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="acb13b8754d0f14e58090cb4826d589f" category="section-title">サポートされる Kubernetes 環境</block>
-  <block id="6b7bfea0bd3da9dc242cb6bfd1641da6" category="paragraph">Cloud Manager は、 Amazon Elastic Kubernetes Service （ Amazon EKS ）および Microsoft Azure Kubernetes Service （ AKS ）で実行されているマネージド Kubernetes クラスタをサポートします。</block>
   <block id="c9ece1f2227c56942142d90092ca7fd2" category="section-title">サポートされるバックエンドストレージ</block>
   <block id="55a560dfd687efd2106430144cfa5892" category="paragraph">ネットアップの Astra Trident は各 Kubernetes クラスタにインストールする必要があり、 Cloud Volumes ONTAP はクラスタのバックエンドストレージとして設定する必要があります。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">コスト</block>
@@ -39,8 +34,6 @@
   <block id="f56b205821b231a157cc0e3315bc72a6" category="paragraph">このトピックでは、 _Kubernetes cluster_where configuration is the same for EKS and selfmanaged Kubernetes clusters を使用します。クラスタタイプは設定が異なる場所で指定します。</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="section-title">要件</block>
   <block id="086e6c16e3fe8e13c336612ef636aa02" category="list-text">Astra Trident</block>
-  <block id="b6edb134a14ab126456a8cf8495987f9" category="inline-link">インストール手順については、 Astra Trident のドキュメントを参照</block>
-  <block id="f71e85a659608075f0509b9338ee77b6" category="list-text">Kubernetes クラスタには、 NetApp Astra Trident がインストールされている必要があります。最新バージョンの 4 つの Astra Trident が必要です。<block ref="96de5dd22941483be2f5e4e573125fc9" category="inline-link-rx"></block>。</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
   <block id="f42c4f194d4364b14558c35f61d5d363" category="inline-link">設定手順については、 Astra Trident のドキュメントを参照してください</block>
   <block id="acc4a07cbf9763718c5eb67fd34340d7" category="list-text">Cloud Volumes ONTAP for AWS は、クラスタのバックエンドストレージとしてセットアップする必要があります。<block ref="0ffa37c66c18870214970164d37847a6" category="inline-link-rx"></block>。</block>
@@ -67,7 +60,6 @@
   <block id="443963254a1729321efbfdbd4e2396c8" category="paragraph"><block ref="443963254a1729321efbfdbd4e2396c8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="59524cf8612a689e4d9ed61067454937" category="list-text">[* アクセス許可 *] タブで、ポリシーを展開し、 [ * ポリシーの編集 * ] をクリックします。</block>
   <block id="4b1c304f38c097ba7776b76e4e099d42" category="inline-image-macro">AWS コンソールのスクリーンショットで、 ［ 権限 ］ タブの ［ ポリシーの編集 ］ ボタンが表示されています。</block>
-  <block id="845120e36ff1372b9be0014ef85d5ae6" category="paragraph"><block ref="845120e36ff1372b9be0014ef85d5ae6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f96de5b5f8572ecb3c2c80e8156181f8" category="list-text">JSON * をクリックして、最初のアクションセットに次の権限を追加します。</block>
   <block id="e72ae7637ee4c3c3135530cf7abf3ea9" category="inline-link">ポリシーの完全な JSON 形式を表示します</block>
   <block id="377d2375cdf41d8fe094ff8bcedcb12b" category="paragraph"><block ref="8eeee6ade5612bec522e249ee65dc7db" category="inline-link-rx"></block>。</block>
@@ -86,24 +78,13 @@
   <block id="b9940ca80ae2598fdb5c6c402f1f1dc1" category="section-title">RBAC 許可をセットアップします</block>
   <block id="3af3ead39a5eec5783d926f19a9b6bfe" category="paragraph">コネクタがクラスタを検出して管理できるように、各 Kubernetes クラスタで Connector ロールを承認する必要があります。</block>
   <block id="33ebb2dacbde969dd24700b6e4dbe435" category="list-text">クラスタロールとロールバインドを作成します。</block>
-  <block id="220a9a1f63ae55426c0a1d2072d313ac" category="list-text">次のテキストを含む YAML ファイルを作成します。</block>
   <block id="26b09dacbaf5084bbe92bfa4d75feba8" category="list-text">クラスタに構成を適用します。</block>
-  <block id="f08cfbb10dc9216a72c9d59da3c626b8" category="list-text">権限グループへの ID マッピングを作成します。</block>
-  <block id="bcac99b7c9956d05f17a4e4f9649da71" category="open-title">eksctl を使用します</block>
-  <block id="f7e12246f1ebd24c7f1a6460919e9bd3" category="paragraph">eksctl を使用して、クラスタと Cloud Manager Connector 用の IAM ロールの間に IAM ID マッピングを作成します。</block>
   <block id="836c1d30babd0339206570a66bcbb4f3" category="inline-link">eksctl のマニュアルを参照してください</block>
   <block id="1e37bf365a6041e37e34936645ebc0a8" category="paragraph"><block ref="1119b51b5b352ff18c686869eb8e6d24" category="inline-link-rx"></block>。</block>
-  <block id="13225b5885ac45d1b5d3019c9de2e513" category="paragraph">以下に例を示します。</block>
-  <block id="a36cee8f656cd9e61ae5593885084071" category="open-title">aws -auth を編集します</block>
-  <block id="de4e940a00cd2a48720f3f12fb53e9a7" category="paragraph">AWS- auth ConfigMap を直接編集して、 Cloud Manager Connector の IAM ロールに RBAC アクセスを追加します。</block>
-  <block id="434f77de052a92ee529d95ba80f3bab4" category="inline-link">詳細な手順については、 AWS EKS のドキュメントを参照してください</block>
-  <block id="05dcb2fa0de0a4549322d783d2f5e5fb" category="paragraph"><block ref="7af1dbb48bd59e8f995e1a97be9e70f8" category="inline-link-rx"></block>。</block>
   <block id="58abfb994a75b4140edc2a973ec9a3dc" category="summary">Cloud Manager を使用して、 Google で管理対象 Google Kubernetes Engine クラスタ（ GKE ）と自己管理型 Kubernetes クラスタを追加および管理できます。Cloud Manager にクラスタを追加する前に、次の要件を満たしていることを確認してください。</block>
   <block id="b6511d823d5fc5c8c219b52663e32c20" category="doc">Google Cloud の Kubernetes クラスタの要件</block>
   <block id="5c24db37dbf4e9b0061b549aeed26cc0" category="paragraph">Cloud Manager を使用して、 Google で管理対象 Google Kubernetes Engine （ GKE ）クラスタと自己管理型 Kubernetes クラスタを追加および管理できます。Cloud Manager にクラスタを追加する前に、次の要件を満たしていることを確認してください。</block>
   <block id="89acfe5365df26c5b2d9c418b9507492" category="paragraph">このトピックでは、 _Kubernetes cluster_where 構成は、 GKE クラスタと自己管理型 Kubernetes クラスタで同じです。クラスタタイプは設定が異なる場所で指定します。</block>
-  <block id="de99b3160528c7a2754f4c5dd4dbb80d" category="inline-link">Helm を使用してインストール手順については、 Astra Trident のドキュメントを参照してください</block>
-  <block id="39b552ed633d800ed1446ff39c2a30b5" category="list-text">Kubernetes クラスタには、 NetApp Astra Trident が導入されている必要があります。Helm を使用して、最新バージョンの Astra Trident のいずれかをインストールします。<block ref="fa49b53e52d430e79adf34c6f68f47be" category="inline-link-rx"></block>。</block>
   <block id="1e7fd0342ed668ad1096d1c03fb7af17" category="list-text">Cloud Volumes ONTAP は、 Kubernetes クラスタと同じテナンシーアカウント、ワークスペース、コネクタで Cloud Manager に配置する必要があります。<block ref="0ffa37c66c18870214970164d37847a6" category="inline-link-rx"></block>。</block>
   <block id="529dbfeb8ae591bdc60b1e28dbcdacc6" category="list-text">必要な権限を持つ Connector が Google で実行されている必要があります。 <block ref="666096be9a7c0cee4f03722fd9c8c93c" category="inline-xref-macro-rx"></block>。</block>
   <block id="6f9b9566eef8a735c30e29931c068a03" category="list-text">Cloud Manager は、 Active Directory を使用するかどうかに関係なく、 RBAC 対応のクラスタをサポートします。Cloud Manager Connector ロールは、各 GKE クラスタで許可されている必要があります。 <block ref="ed89a5c7598981ce49ff49e89b6578d7" category="inline-xref-macro-rx"></block>。</block>
@@ -129,7 +110,6 @@
   <block id="837b8b5111e480b693f744fec1804ccb" category="list-text">のサービスアカウントの詳細で確認します <block ref="90b0dbeec03910bdea419bc944660763" category="inline-link-macro-rx"></block>。</block>
   <block id="4bf9575451981aabdb909c6a57da72cf" category="inline-image-macro">Cloud Console のサービスアカウントの詳細のスクリーンショット。</block>
   <block id="ae62d39210641a9fb9c2dd38c13a2b07" category="paragraph"><block ref="ae62d39210641a9fb9c2dd38c13a2b07" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ad4cf17755a22769adfcbfac8d05ece2" category="list-text">次のテキストを含む YAML ファイルを作成します。「 Subjects:kind 」変数をユーザ名に置き換え、「 Subjects:user:` 」を認証されたサービスアカウントの一意の ID に置き換えます。</block>
   <block id="59926e95a1273af1eff3f3a8847d1286" category="summary">Cloud Manager を使用して、 Azure で管理対象 Azure Kubernetes クラスタ（ AKS ）と自己管理型 Kubernetes クラスタを追加および管理できます。Cloud Manager にクラスタを追加する前に、次の要件を満たしていることを確認してください。</block>
   <block id="c5be663296cc453aa3076c0cfcedc102" category="doc">Azure での Kubernetes クラスタの要件</block>
   <block id="39e746094f61257868fbdee54e708de3" category="paragraph">このトピックでは、 _Kubernetes cluster_where configuration is the same for AKS and selfmanaged Kubernetes clusters を使用します。クラスタタイプは設定が異なる場所で指定します。</block>
@@ -163,7 +143,6 @@
   <block id="787c8e09d4ba5342ce8f84b1af78b048" category="inline-image-macro">Azure 管理ポータルのシステムによって割り当てられたオブジェクト ID ウィンドウのスクリーンショット。</block>
   <block id="0c90ae4dc73f81dbbd0a6e0299f5deb5" category="paragraph"><block ref="0c90ae4dc73f81dbbd0a6e0299f5deb5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4ebffaff3187e96f25bb8b4b25978bda" category="list-text">自己管理型の Kubernetes クラスタ * を導入する場合は、許可されたユーザのユーザ名が必要です。</block>
-  <block id="333544b2aeb49831884a7faafb490e35" category="list-text">次のテキストを含む YAML ファイルを作成します。「 Subjects:kind 」変数をユーザ名に置き換え、「 Subjects:user:` 」をシステムに割り当てられた管理対象 ID のオブジェクト ID または上記の権限を持つユーザのユーザ名に置き換えます。</block>
   <block id="e59cbc41f2797427c91406bb0b03401e" category="summary">高度なデータ管理のために、管理対象 Kubernetes クラスタを Cloud Manager に追加します。</block>
   <block id="d9348d075dc7b3c91cff99d56dfc327b" category="doc">Kubernetes のドキュメント</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
@@ -206,14 +185,10 @@
   <block id="b695b2f49a50c3d925dc789182bc1070" category="list-text">Kubernetes 構成ファイルを YAML 形式でアップロードします。</block>
   <block id="6e53f86d2931b115352479b77b41a90e" category="inline-image-macro">Kubernetes クラスタのインポートページのスクリーンショットで、構成ファイルと使用可能なクラスタの表を示しています。</block>
   <block id="c0051c23ce1a6dfb0a01449b18d415ad" category="paragraph"><block ref="c0051c23ce1a6dfb0a01449b18d415ad" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="546b680809febc3022d8385dde42cd09" category="summary">管理対象の Kubernetes クラスタを Canvas に追加すると、ネットアップのクラウドデータサービスを使用して高度なデータ管理を行うことができます。</block>
-  <block id="e8cae55afec935b901fe515559f5c672" category="doc">ネットアップのクラウドデータサービスを Kubernetes クラスタで使用できます</block>
   <block id="88115501de56483f3bf8dd5514ce1d84" category="paragraph">現時点では、 Kubernetes クラスタで Cloud Backup がサポートされます。Cloud Backup を使用して、永続ボリュームをオブジェクトストレージにバックアップできます。</block>
   <block id="963408f4aa8e949d60c3b0befc33267d" category="inline-link">永続ボリュームのバックアップ方法については、 Cloud Backup のドキュメントを参照してください</block>
-  <block id="e77b635529c315242274245769062742" category="paragraph"><block ref="0cf41425f985f21dcce976508ef1a8db" category="inline-link-rx"></block>。</block>
   <block id="a55035d13d56568118050b48f14c492f" category="summary">Amazon Elastic Kubernetes Service （ Amazon EKS ）クラスタを Cloud Manager に追加して、永続ボリュームの Amazon S3 へのバックアップを開始できるようにします。</block>
   <block id="293e3749aa00f6ba4c48a0f2d8f93ba2" category="doc">Cloud Manager に Amazon Kubernetes クラスタを追加</block>
-  <block id="52d46a61443272c06b413508e1c79b15" category="paragraph">Kubernetes clusers を Cloud Manager で検出またはインポートして、永続ボリュームを Amazon S3 にバックアップできるようにすることができます。</block>
   <block id="29508a151c67e3d0dd86c039a47344fd" category="list-text">Amazon Web Services * &gt; * Kubernetes Cluster * を選択し、 * Next * をクリックします。</block>
   <block id="d59c3e6f1bd8ff190720d2953c94c804" category="inline-image-macro">選択した AWS リージョンと Kubernetes クラスタを表示する Kubernetes クラスタの検出ページのスクリーンショット</block>
   <block id="f8c9a10cf098481ef28aa7f25a7229aa" category="paragraph"><block ref="f8c9a10cf098481ef28aa7f25a7229aa" category="inline-image-macro-rx" type="image"></block></block>
@@ -245,7 +220,6 @@
   <block id="6e65026446a3f3b3ebb5471fa617ce29" category="sidebar">AWS にクラスタを追加します</block>
   <block id="2d1f9ee77fc479dfb743551a0245845f" category="sidebar">Azure でクラスタを追加</block>
   <block id="ba9410f15dd19e0a92f5f4c2291636d6" category="sidebar">Google Cloud にクラスタを追加します</block>
-  <block id="68cac9b88f3148d5dfe0e976ab311e4f" category="sidebar">Kubernetes クラスタでデータサービスを有効化</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
   <block id="41e3782291be693bb1f948094d98229d" category="sidebar">データサービスを有効化</block>
@@ -254,11 +228,170 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central のブログです</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">クラウドに関する Web セミナー</block>
-  <block id="a6a798b867f9fc8417745a183efd7eb6" category="list-text"><block ref="022a32848e9a635fb610022260eb258d" category="inline-link-rx"></block> （推奨）</block>
-  <block id="8d55e3e5808e7e03da07d756385c832d" category="list-text"><block ref="8d55e3e5808e7e03da07d756385c832d" category="inline-link-rx"></block></block>
-  <block id="6014ba23e9fc5f2c6887737ea05510d8" category="list-text"><block ref="6b9aa097c47f43d8df1053195d75d9bf" category="inline-link-rx"></block> （推奨）</block>
-  <block id="d411eaec4bb582e5916583ac64fcdf30" category="list-text"><block ref="d411eaec4bb582e5916583ac64fcdf30" category="inline-link-rx"></block></block>
-  <block id="e21cac46a7c03ad31fa2e72981de80dc" category="list-text"><block ref="4f38115e376c78857e2927695cec2c43" category="inline-link-rx"></block> （推奨）</block>
-  <block id="df9caceb718925bf1c4a4541fb09798b" category="list-text"><block ref="df9caceb718925bf1c4a4541fb09798b" category="inline-link-rx"></block></block>
-  <block id="81d769953d03a391b5322bf4f84f2aff" category="list-text"><block ref="81d769953d03a391b5322bf4f84f2aff" category="inline-link-rx"></block></block>
+  <block id="32fc9c6f3a293194ff9fde5db876cbb6" category="section-title">2022 年 4 月 4 日</block>
+  <block id="ecee73066145d2e6f1b75b79d2af7514" category="section-title">Cloud Manager のリソースページを使用して Kubernetes クラスタを管理</block>
+  <block id="26d6d7c2307bf3cf565d0e8283db031d" category="list-text">Kubernetes クラスタ管理の統合がクラスタ作業環境から直接強化されました。クラスタリソースのページで次の操作を実行できるようになりました。</block>
+  <block id="f1fe71442cd08e74d342114df7ee1551" category="inline-link-macro">Astra Trident をインストール</block>
+  <block id="b4940c8b54941154dff3675bb279c96f" category="list-text"><block ref="b4940c8b54941154dff3675bb279c96f" category="inline-link-macro-rx"></block></block>
+  <block id="fd0987c679e587c89c7d5551c641f09e" category="inline-link-macro">ストレージクラスを追加する</block>
+  <block id="be2f7669a1d3d4dec877a85297de18ec" category="list-text"><block ref="be2f7669a1d3d4dec877a85297de18ec" category="inline-link-macro-rx"></block></block>
+  <block id="260adbf21b473e18ea0788235c9512b8" category="inline-link-macro">永続ボリュームを表示します</block>
+  <block id="6a38c17b4adfb6fade3691d6bab9976a" category="list-text"><block ref="6a38c17b4adfb6fade3691d6bab9976a" category="inline-link-macro-rx"></block></block>
+  <block id="f253fdd547a6f5e0e05bbdb671ae8b24" category="inline-link-macro">クラスタを削除</block>
+  <block id="aa7542e939f8e623254af69a1fcd8e2b" category="list-text"><block ref="aa7542e939f8e623254af69a1fcd8e2b" category="inline-link-macro-rx"></block></block>
+  <block id="6d6f9b61b474cb16598eda49f24d6452" category="list-text"><block ref="6d6f9b61b474cb16598eda49f24d6452" category="inline-link-macro-rx"></block></block>
+  <block id="06ad314b340900d226b1196e1fe289e9" category="inline-link-macro">クイックスタート</block>
+  <block id="2caed3e1483d538b0b868d278bd53949" category="list-text">新しい <block ref="a7ce12c998c9439767584776d325ea5b" category="inline-link-macro-rx"></block> すぐに運用を開始できます。</block>
+  <block id="4e6d8a21fe823b1687cc8c006854102e" category="paragraph">Kubernetes クラスタを検出または Cloud Manager にインポートすることで、永続ボリュームを Amazon S3 にバックアップできます。</block>
+  <block id="56a8cd5372dfc93abbb885fc864189bf" category="summary">Managed Kubernetes クラスタを Canvas に追加したら、 Cloud Manager を使用して、互換性のある Astra Trident インストールまたは Astra Trident インストールを確認できます。最新バージョンの 4 つの Astra Trident が必要です。</block>
+  <block id="14d9b10c6196045941347a9e85704b50" category="inline-link-macro">Astra Trident のドキュメント</block>
+  <block id="8600dce42208e643e9f3e0a996c90220" category="paragraph">Astra Trident の詳細については、を参照してください <block ref="2b8a155fc083396b96b18cee0ba5eab0" category="inline-link-macro-rx"></block>。</block>
+  <block id="703b6be9eec96bb49a157de2a1ae70ae" category="admonition">Astra Trident がインストールされていない場合や、互換性のないバージョンの Astra Trident がインストールされている場合は、クラスタに必要な処理があることが表示されます。</block>
+  <block id="1130de8b9b833485eff2e257fb69bfc6" category="list-text">キャンバスで Kubernetes 作業環境をダブルクリックするか、 * 作業環境の入力 * をクリックします。</block>
+  <block id="6867d56501a1639e8de0328e96a5d354" category="list-text">Astra Trident がインストールされていない場合は、 * Trident のインストール * をクリックします。</block>
+  <block id="7c729d1891ae54bb841ac8551a0cc665" category="inline-image-macro">Kubernetes のリソースページのスクリーンショットには、 Astra Trident のインストール用ボタンと Astra Trident のインストール用ボタンが表示されていません。</block>
+  <block id="fca8d7d1d460e9d7e376d9a8c0436a56" category="paragraph"><block ref="fca8d7d1d460e9d7e376d9a8c0436a56" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="607bff952f97786985d5316831fa1fa1" category="inline-link">アップグレード手順については、 Astra Trident のドキュメントを参照</block>
+  <block id="964778d2cea436fcbfab23500ba508d3" category="list-text">Astra Trident のバックレベルバージョンがインストールされている場合は、<block ref="7750d0e2469b3c9ff5677b5c3166bd8d" category="inline-link-rx"></block>。</block>
+  <block id="b856d54eb2c982baae9beda550a3c6e4" category="inline-image-macro">Astra Trident のアップグレードプロセスのスクリーンショット</block>
+  <block id="fd007b3e14f8b08692b19f1bf6b9ae5b" category="paragraph"><block ref="fd007b3e14f8b08692b19f1bf6b9ae5b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5af4fd067fdcfc2366829de01d0a1fe4" category="paragraph">最新バージョンの Astra Trident がインストールされている。ストレージクラスを追加できるようになりました。</block>
+  <block id="dcfed683336073a1cbf61c7b6871cc34" category="summary">管理対象 - Kubernetes クラスタをキャンバスに追加したら、 Cloud Manager を使用してワークスペースからクラスタを削除できます。</block>
+  <block id="f9a4b06baa6b1477afa377706cef0f0f" category="doc">Kubernetes クラスタをワークスペースから削除</block>
+  <block id="f33a40ad5d2017c9e1b0e7abd7a5a643" category="list-text">キャンバスで Kubernetes 作業環境をダブルクリックするか、 * 作業環境の入力 * をクリックします。</block>
+  <block id="c3779df0736ecbd3346b30067bbc3d57" category="list-text">ページの右上にあるアクションメニューを選択し、 * ワークスペースから削除 * をクリックします。</block>
+  <block id="cc684c4b8845d4e51e87b6bf727c1d76" category="inline-image-macro">Kubernetes クラスタをワークスペースから削除するメニューを示すスクリーンショット。</block>
+  <block id="4d742ed466433397d47332397dc4d3c4" category="paragraph"><block ref="4d742ed466433397d47332397dc4d3c4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ffbd99556cf50096753bfbd7a907b09c" category="list-text">ワークスペースからのクラスタの削除を確認するには、 * Remove * をクリックします。このクラスタはいつでも再検出できます。</block>
+  <block id="bcec5055290dea9702824b44b3ed2bff" category="inline-image-macro">Kubernetes クラスタをワークスペースから削除することを確認するページのスクリーンショット。</block>
+  <block id="86a5f92314f48ea7dfb3565a2752a76d" category="paragraph"><block ref="86a5f92314f48ea7dfb3565a2752a76d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6063d5ed0fa76ced94f0f7adbbd7b833" category="paragraph">Kubernetes クラスタがワークスペースから削除され、キャンバスに表示されなくなります。</block>
+  <block id="63c24f9994279591340cd89dcb19f3cd" category="summary">管理対象の Kubernetes クラスタを Canvas に追加すると、 Cloud Manager を使用してストレージクラスを管理できるようになります。</block>
+  <block id="e8b9c3a9859a62e9a58431c3b61f75d5" category="doc">ストレージクラスを管理する</block>
+  <block id="76a5809985aa691391b31d5f20c17a42" category="admonition">ストレージクラスが定義されていない場合は、「必須」の操作がクラスタに表示されます。</block>
+  <block id="8e79c25356bb563e28e9ae0a108b960b" category="list-text">最新の 4 つのバージョンの Astra Trident がインストールされていることを確認</block>
+  <block id="af1dab031c2b915817ef7d5169fdfcfb" category="list-text">Add Storage Class * をクリックして、 Kubernetes クラスタのストレージクラスを定義します。</block>
+  <block id="790a7b05e43ed5454554eef9671154f0" category="inline-image-macro">ストレージクラスの追加ボタンを示す Kubernetes リソースページのスクリーンショット</block>
+  <block id="bac110b30291a86e52ffa944c5ba6bb5" category="paragraph"><block ref="bac110b30291a86e52ffa944c5ba6bb5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6a8b915c7d54f345c01102c31e00f7e1" category="list-text">ストレージクラスの名前を指定し、定義オプションを選択して、 * 次へ * をクリックします。</block>
+  <block id="26e844784a066d14af9464e1c0366829" category="inline-image-macro">Kubernetes ストレージクラスの定義オプションを示すスクリーンショット</block>
+  <block id="2204d229f6006a328688918431aab2cf" category="paragraph"><block ref="2204d229f6006a328688918431aab2cf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="46213c151b950647dd4e20d3c0e13222" category="list-text">クラスタに接続する作業環境を選択します。[ 追加（ Add ） ] をクリックします。</block>
+  <block id="e0c9fa0852fea63dc1167ab3f2b85fb4" category="inline-image-macro">Kubernetes クラスタ用の作業環境の選択を示すスクリーンショット。</block>
+  <block id="f99a712980063704c4a584a6683234a2" category="paragraph"><block ref="f99a712980063704c4a584a6683234a2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6f78048f5e23feba1c2dfeeb70958d2b" category="paragraph">をクリックすると、 Kubernetes クラスタのリソースページでストレージクラスを表示できます。</block>
+  <block id="24d4e555e1f7b6ed662909980cd4b88c" category="inline-image-macro">Kubernetes リソースページの「ストレージクラスの表示」を示すスクリーンショット。</block>
+  <block id="a770b061844a8f658a79e0452983186e" category="paragraph"><block ref="a770b061844a8f658a79e0452983186e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a51c9219854a3d214e31f819a1e7632e" category="section-title">作業環境の詳細を表示</block>
+  <block id="fed6f504a568def380a16e81e4509c4b" category="list-text">[ * ストレージクラス * ] タブをクリックします。</block>
+  <block id="c05b19af7187edbea768275aa1835d7e" category="list-text">情報アイコンをクリックして、作業環境の詳細を確認します。</block>
+  <block id="093397c8ba222a56a6cafe0046ed32df" category="paragraph">作業環境の詳細パネルが開きます。</block>
+  <block id="88d7886b91f2558662854777a9258628" category="inline-image-macro">Kubernetes クラスタの作業環境の詳細のスクリーンショット。</block>
+  <block id="30839295878a455d18f2b8a0dce98721" category="paragraph"><block ref="30839295878a455d18f2b8a0dce98721" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6cb5ec91420685bca856d5c3c506a3f0" category="section-title">デフォルトのストレージクラスを設定</block>
+  <block id="e06675debd77236832cd1bc55da29490" category="list-text">ストレージクラスのアクションメニューをクリックし、 * デフォルトに設定 * をクリックします。</block>
+  <block id="60994baeb2a6bcfbd041df549466a420" category="inline-image-macro">デフォルトのストレージクラスを設定する操作メニューのスクリーンショット。</block>
+  <block id="fa49b244e60624d651baf60664e565b3" category="paragraph"><block ref="fa49b244e60624d651baf60664e565b3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f1d758a802b437c14987d63e77a61a9e" category="paragraph">選択したストレージクラスがデフォルトとして設定されます。</block>
+  <block id="248ead8f8ebff7c3211d2c918694e817" category="inline-image-macro">デフォルトのストレージクラスを示すスクリーンショット。</block>
+  <block id="101961998c35d35cc5ab5fd53eb57c57" category="paragraph"><block ref="101961998c35d35cc5ab5fd53eb57c57" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="90c935e9359ed5f4172e2bfbf031b209" category="section-title">ストレージクラスを削除する</block>
+  <block id="e2fee88009bdc68bb3ccdcdbef57c310" category="inline-image-macro">ストレージクラスを削除する操作メニューのスクリーンショット。</block>
+  <block id="04ed0f4f9893c8d492f8a5ac74b5a400" category="paragraph"><block ref="04ed0f4f9893c8d492f8a5ac74b5a400" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="78b12c7f2018d4a6b9b2d3ab0aa23fab" category="list-text">[ 削除 ] をクリックして、ストレージクラスの削除を確認します。</block>
+  <block id="14d57c72376f75349d67da3b67721b52" category="inline-image-macro">ストレージクラスを削除する確認画面のスクリーンショット。</block>
+  <block id="0dd89c6b1e51baa8486c2bb0e6b80b54" category="paragraph"><block ref="0dd89c6b1e51baa8486c2bb0e6b80b54" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="afd76a0ed7f0f829a9fddbc272ab6299" category="paragraph">選択したストレージクラスが削除されます。</block>
+  <block id="c51edbd9644671669f8a6fc9bdfe66fe" category="summary">管理対象の Kubernetes クラスタを Canvas に追加すると、ネットアップのクラウドデータサービスを使用して高度なデータ管理を行うことができます。</block>
+  <block id="7c3dba5dcfefe7c148fb75a35249f81c" category="doc">ネットアップのクラウドデータサービスを Kubernetes クラスタで使用</block>
+  <block id="159a2c61a2d800a03c28121597f3f775" category="paragraph"><block ref="c231e29babf1a493836bb058a52173d8" category="inline-link-macro-rx"></block>。</block>
+  <block id="09bb0b2da16893a3eff055a9d40e2794" category="summary">Kubernetes クラスタを Cloud Manager に追加して、いくつかの高度なデータ管理手順をすばやく実行</block>
+  <block id="79e470c48afbbe1fa9e042e6403d2459" category="doc">Kubernetes クラスタの導入を開始する</block>
+  <block id="6c5ac2a580024aab98e753e5c4dc264c" category="paragraph">これらの手順を実行すると、すぐに作業を開始できます。</block>
+  <block id="2fadcb7c66778a6e996282a9d85d69d3" category="paragraph">ご使用の環境がクラスタタイプの前提条件を満たしていることを確認してください。</block>
+  <block id="91371b061c7d73513ec2d8334d74507a" category="paragraph"><block ref="91371b061c7d73513ec2d8334d74507a" category="inline-link-macro-rx"></block></block>
+  <block id="8ef69472e0bf92730a0f3921c882ccd5" category="paragraph"><block ref="8ef69472e0bf92730a0f3921c882ccd5" category="inline-link-macro-rx"></block></block>
+  <block id="30cbb99c1fb544a739a33f3089a4207a" category="paragraph"><block ref="30cbb99c1fb544a739a33f3089a4207a" category="inline-link-macro-rx"></block></block>
+  <block id="822d28ac02a6b0c333bf3eabab847e14" category="paragraph">Kubernetes クラスタを追加し、 Cloud Manager を使用して作業環境に接続できます。</block>
+  <block id="29eef78ab52bc074b0642baafaa44a77" category="inline-link-macro">Amazon Kubernetes クラスタを追加</block>
+  <block id="58edfe2caca070b44396387dc8c34d0d" category="paragraph"><block ref="58edfe2caca070b44396387dc8c34d0d" category="inline-link-macro-rx"></block></block>
+  <block id="8cae45546ea6e7035e9b798f709fc911" category="inline-link-macro">Azure Kubernetes クラスタを追加</block>
+  <block id="e9c72c951b20431e1caafe9920ac0b62" category="paragraph"><block ref="e9c72c951b20431e1caafe9920ac0b62" category="inline-link-macro-rx"></block></block>
+  <block id="2872769900c1ca485d1628b4eefde308" category="inline-link-macro">Google Cloud Kubernetes クラスタを追加</block>
+  <block id="ec22f19404cd18f489ae10e70492134a" category="paragraph"><block ref="ec22f19404cd18f489ae10e70492134a" category="inline-link-macro-rx"></block></block>
+  <block id="c5ea1d5f2f35adec1d872ec686a8c040" category="paragraph">Kubernetes の標準のインターフェイスと構成要素を使用して、永続ボリュームを要求および管理できます。Cloud Manager では、 NFS ストレージクラスと iSCSI ストレージクラスが作成されます。このクラスは、永続的ボリュームのプロビジョニング時に使用できます。</block>
+  <block id="fc0f20615e6c250961a9e88b2929444b" category="inline-link-macro">Trident を使用した最初のボリュームのプロビジョニングの詳細をご確認ください</block>
+  <block id="28eb70a7fd7de45b7957d03e5f3d4554" category="paragraph"><block ref="439da74acd283499ba63209cd4e1e52e" category="inline-link-macro-rx"></block>。</block>
+  <block id="30b6dbd7820394673df20d4ca1a96433" category="paragraph">Kubernetes クラスタを Cloud Manager に追加したら、 Cloud Manager のリソースページでクラスタを管理できます。</block>
+  <block id="f500d0f02d11fd7c61fe2f5da39074f0" category="inline-link-macro">Kubernetes クラスタを管理する方法について説明します。</block>
+  <block id="35cbaff5433d00a9b082ae5c280b5e9e" category="paragraph"><block ref="35cbaff5433d00a9b082ae5c280b5e9e" category="inline-link-macro-rx"></block></block>
+  <block id="b0c3c99bdd45282a0907b14337e167d0" category="summary">管理対象の Kubernetes クラスタを Canvas に追加すると、 Cloud Manager を使用して接続されている永続ボリュームを表示できます。</block>
+  <block id="ca264d2d0523bcea1c8aa70735414da1" category="paragraph">管理対象の Kubernetes クラスタを Canvas に追加すると、 Cloud Manager を使用して永続ボリュームを表示できます。</block>
+  <block id="89c3bcf0ecc1114f8d19734d9156cb40" category="inline-link-macro">プロビジョニング</block>
+  <block id="fcba6012c777a16b10bc3866ceb75c1c" category="list-text">概要 * タブで * ボリュームの表示 * をクリックするか、 * 永続ボリューム * タブをクリックします。永続ボリュームが設定されていない場合は、を参照してください <block ref="8ea547c8e5046e3bbfaab0e05145f9ac" category="inline-link-macro-rx"></block> Astra Trident でのボリュームのプロビジョニングの詳細については、</block>
+  <block id="3a84970eaeee39d237d01aa9a3807a56" category="paragraph">設定されている永続ボリュームの表が表示されます。</block>
+  <block id="9d7f06e389e97b5210ff3327f767fb7e" category="inline-image-macro">永続ボリュームの表のスクリーンショット。</block>
+  <block id="592eeadfba828d69880933e6db8c3887" category="paragraph"><block ref="592eeadfba828d69880933e6db8c3887" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fbb4c4e41bf29d56afd94a8150a4fc4d" category="summary">Astra Trident は、ネットアップが管理している、完全にサポートされているオープンソースプロジェクトです。Kubernetes と Persistent Volume フレームワークとネイティブに統合されている Astra Trident は、ネットアップストレージプラットフォームを任意に組み合わせて実行されているシステムから、ボリュームのプロビジョニングと管理をシームレスに行います。</block>
+  <block id="f3edad7dd39ccdb42ecbbd25ce696ef7" category="doc">Cloud Manager での Kubernetes によるデータ管理</block>
+  <block id="d202d8021b40bfbe11235a5a65c0fe8c" category="inline-link-macro">Trident の詳細をご確認ください</block>
+  <block id="4f63c1d4acd536bd5b9a9745d3f20e7b" category="paragraph">Astra Trident は、ネットアップが管理している、完全にサポートされているオープンソースプロジェクトです。Kubernetes と Persistent Volume フレームワークとネイティブに統合されている Astra Trident は、ネットアップストレージプラットフォームを任意に組み合わせて実行されているシステムから、ボリュームのプロビジョニングと管理をシームレスに行います。 <block ref="dd2206fc656d0a859de4039d89433dfe" category="inline-link-macro-rx"></block>。</block>
+  <block id="ce13beab50b67927b1103252e965db42" category="paragraph">Kubernetes クラスタは、 Cloud Manager を使用して直接管理できます。</block>
+  <block id="9e2a7f44aa27cc7ead915762de91e605" category="list-text">Astra Trident をインストール</block>
+  <block id="3e1566822574596f61c1fe009087856e" category="list-text">ハイブリッドクラウドインフラの一部としてクラスタを追加、管理</block>
+  <block id="aa6e96555ed26ef1dcb622e5b13653ae" category="list-text">ストレージクラスを追加して管理し、作業環境に接続する。</block>
+  <block id="d59a7b1b3d81013cb6befe124b4da534" category="list-text">Cloud Backup Service を使用して永続ボリュームをバックアップする。</block>
+  <block id="d309ea6b2fbd918f1d33db3b349ce70e" category="paragraph">Cloud Manager は、で実行されるマネージド Kubernetes クラスタをサポートします。</block>
+  <block id="46a72d9af542e3e84ec5f5f3a72f54c1" category="inline-link-macro">Amazon Elastic Kubernetes Service （ Amazon EKS ）</block>
+  <block id="7686fcee34a9e771a02c0b8615f7751b" category="list-text"><block ref="7686fcee34a9e771a02c0b8615f7751b" category="inline-link-macro-rx"></block></block>
+  <block id="f3bd1985b243e9691bbbd63c6702344b" category="inline-link-macro">Microsoft Azure Kubernetes Service （ AKS ）</block>
+  <block id="dcb1c5115f00a4ce733e979d31754406" category="list-text"><block ref="dcb1c5115f00a4ce733e979d31754406" category="inline-link-macro-rx"></block></block>
+  <block id="974030a30a48754684d05541fd5e96c9" category="inline-link-macro">Google Kubernetes Engine （ GKE ）</block>
+  <block id="b987f0a825761c9e56972aa39ef676f8" category="list-text"><block ref="b987f0a825761c9e56972aa39ef676f8" category="inline-link-macro-rx"></block></block>
+  <block id="213acaa88814071409958acdc9192518" category="section-title">サポートされている Astra Trident 環境</block>
+  <block id="22d8ff517038ce2f90897c500f9ea50f" category="inline-link-macro">前提条件を確認します</block>
+  <block id="e244dca7cd711ef2b227bcd422cd641e" category="paragraph">最新バージョンの 4 つの Astra Trident が必要です。Trident は Cloud Manager から直接インストールできます。お勧めします <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> インストールの前に、</block>
+  <block id="74347238ab27b50c48fd1aa9e68844e4" category="inline-link-macro">オペレータにアップグレードしてください</block>
+  <block id="7c0e36f1a9c7af2d74760d191974b0e0" category="paragraph">Astra Trident をアップグレードするには、 <block ref="67d80849aeaf50fe569386f344ed4725" category="inline-link-macro-rx"></block>。</block>
+  <block id="c4541926fe853a3614406482ac212fff" category="list-text">最新バージョンの 4 つの Astra Trident が必要です。Trident は Cloud Manager から直接インストールできます。お勧めします <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> Astra Trident をインストールする前に</block>
+  <block id="f404e9d0235ae9dbfd304a568ea59510" category="list-text"><block ref="03eaf10395ef9e3efad62cf1e4438d2a" category="inline-link-macro-rx"></block> （推奨）</block>
+  <block id="446e449228d00ad435a264295f1e0158" category="list-text"><block ref="446e449228d00ad435a264295f1e0158" category="inline-link-macro-rx"></block></block>
+  <block id="6b3760e9ce2bfd92685feda2753e312f" category="list-text">バックアップとリストア</block>
+  <block id="2dcb994cc66baaaa5ac5f51a666cc470" category="list-text">バックアップとリストアに必要なのは、基本的な許可だけです。</block>
+  <block id="589cddcfb97ddd817654b8448e583560" category="list-text">Cloud Manager を使用してストレージクラスを追加するには、拡張された許可が必要です。</block>
+  <block id="e38848cde65bc177038607eba51773c3" category="list-text">Astra Trident をインストールします</block>
+  <block id="0cc29c3016f8edd45e66cfd491cc35e4" category="list-text">Cloud Manager が Astra Trident をインストールするための完全な権限を付与する必要があります。</block>
+  <block id="6ddcbf7c123160275093489b09f57178" category="admonition">Astra Trident をインストールすると、 Cloud Manager は Astra Trident バックエンドと、 Astra Trident がストレージクラスタと通信するために必要なクレデンシャルを含む Kubernetes シークレットをインストールします。</block>
+  <block id="a392c9c3d2df2d0a5afaed519cd01879" category="list-text">許可要件に基づいて次のテキストを含む YAML ファイルを作成します。「 Subjects:kind 」変数をユーザ名に置き換え、「 Subjects:user:` 」を認証されたサービスアカウントの一意の ID に置き換えます。</block>
+  <block id="515f76789d2dca7dac91e44bba61e4f7" category="open-title">バックアップ / リストア</block>
+  <block id="0653aaf657fc7447bc8ef9afc51f9214" category="paragraph">Kubernetes クラスタのバックアップとリストアを有効にするための基本的な許可を追加する。</block>
+  <block id="7672a092783c4348b96b40ea2dcf6681" category="open-title">ストレージクラス</block>
+  <block id="a296388d715a55c1152745b7367fc0c5" category="paragraph">拡張された権限を追加し、 Cloud Manager を使用してストレージクラスを追加します。</block>
+  <block id="b8b9eab8c1ed7b79387652490f5724ec" category="open-title">Trident をインストール</block>
+  <block id="47b31bee79140af784a118e6eb34fdbd" category="paragraph">コマンドラインを使用して完全な権限を付与し、 Cloud Manager が Astra Trident をインストールできるようにします。</block>
+  <block id="74ac826b742735257c4c43faffe62b41" category="list-text">最新バージョンの 4 つの Astra Trident が必要です。Trident は Cloud Manager から直接インストールできます。お勧めします <block ref="8da0f2411c72d1a5ebe475af99243801" category="inline-link-macro-rx"></block> Astra Trident をインストールする前に、</block>
+  <block id="f89e07a755c721ce8e7e3c8eed5f0f13" category="list-text"><block ref="e4079d926604a2f5b999934a2d4f26d7" category="inline-link-macro-rx"></block> （推奨）</block>
+  <block id="f994827af963c9b45fb8cbbe74adc22c" category="list-text"><block ref="f994827af963c9b45fb8cbbe74adc22c" category="inline-link-macro-rx"></block></block>
+  <block id="05a0030833e70e4af624c3716f988104" category="list-text">許可要件に基づいて次のテキストを含む YAML ファイルを作成します。「 Subjects:kind 」変数をユーザ名に置き換え、「 Subjects:user:` 」をシステムに割り当てられた管理対象 ID のオブジェクト ID または上記の権限を持つユーザのユーザ名に置き換えます。</block>
+  <block id="d8504168dbe366f1ffe49a77a72eacda" category="list-text"><block ref="c55a72352b8cc03452bbfc87fde8900e" category="inline-link-macro-rx"></block> （推奨）</block>
+  <block id="8b279013423512c41be32334a5cc81ec" category="list-text"><block ref="8b279013423512c41be32334a5cc81ec" category="inline-link-macro-rx"></block></block>
+  <block id="9f5e2bf1b2647c62e7ea24017cc08df2" category="list-text"><block ref="9f5e2bf1b2647c62e7ea24017cc08df2" category="inline-link-macro-rx"></block></block>
+  <block id="c933a937af3266562155099a4ad44e14" category="paragraph"><block ref="c933a937af3266562155099a4ad44e14" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d1c51ee4ad82e26c7069e126c0a5d25d" category="paragraph">異なる機能を有効にするには、異なる許可が必要です。</block>
+  <block id="12fb6938fb90a471014c2abce44ca15b" category="list-text">許可要件に基づいて次のテキストを含む YAML ファイルを作成します。</block>
+  <block id="e4e88e99e021b78e80ca0c688485ea20" category="list-text">eksctl' を使用して ' アクセス権グループへの ID マッピングを作成します以下に例を示します。</block>
+  <block id="fe56eccd77db48009fae1416eb34f4bd" category="summary">Cloud Manager を使用して、 Astra Trident のインストール、ストレージクラスの設定、クラスタの削除、データサービスの有効化を行うことができます。</block>
+  <block id="384b71db954a7a463c759208283e47c4" category="doc">Kubernetes クラスタを管理</block>
+  <block id="7e60eeaefc6a3c5fb637acd03070a64a" category="paragraph">Kubernetes クラスタを Cloud Manager に追加したら、リソースページでクラスタを管理できます。リソースページを開くには、キャンバス上の Kubernetes 作業環境をダブルクリックします。</block>
+  <block id="a55c9ab275da7d6af3d043922cbe9db6" category="inline-image-macro">クラスタの詳細を示す Kubernetes リソースページのスクリーンショット。</block>
+  <block id="6e7cef0ef9634162a88caaa29c694893" category="paragraph"><block ref="6e7cef0ef9634162a88caaa29c694893" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0a7f3527cff1099d537e438e6d62de3f" category="paragraph">リソースページでは、次の操作を実行できます。</block>
+  <block id="ae98d4fcb6e8e5720784f6c4936d3fda" category="list-text">Kubernetes クラスタのステータスを表示する</block>
+  <block id="4c1d1c29dc032acaba6d87523245901a" category="list-text">Astra Trident がインストールされていることを確認を参照してください <block ref="345832d3138c1eb0f6633c370a7f6028" category="inline-link-macro-rx"></block>。</block>
+  <block id="1144aea980959108cfaf2514fbf4950d" category="list-text">ストレージクラスを追加および削除する。を参照してください <block ref="9e82adf493a42c7e6eea0f3ece5f1523" category="inline-link-macro-rx"></block>。</block>
+  <block id="148ab235d087e61e2b2f7fd1f1c69a5f" category="list-text">永続ボリュームを表示します。を参照してください <block ref="cd4689f963d360c6dbfc83d0ed5ebd22" category="inline-link-macro-rx"></block>。</block>
+  <block id="001f7c78e2e0007ed1165a22b8a857c7" category="list-text">Kubernetes クラスタをワークスペースから削除を参照してください <block ref="2345a967fe9f27d7be623e42d7d8b4c4" category="inline-link-macro-rx"></block>。</block>
+  <block id="c83be9d30dd0d8b55fb8bdbf6f11eb85" category="inline-link-macro">ネットアップのクラウドデータサービスを活用</block>
+  <block id="5988e88f080603d109047fd28346431d" category="list-text">Cloud Backup をアクティブ化または表示します。を参照してください <block ref="970aaadca61cb9a29c8e2b76716ffafe" category="inline-link-macro-rx"></block>。</block>
+  <block id="33729732e4c013e81e5576920fedbc76" category="sidebar">ネットアップのクラウドデータサービスを実現</block>
 </blocks>
