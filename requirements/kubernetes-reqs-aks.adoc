@@ -40,9 +40,9 @@ Kubernetes クラスタを検出および管理するには、 Azure で Cloud M
 
 次のリンクのいずれかの手順に従います。
 
-* https://docs.netapp.com/us-en/cloud-manager-connector/task-creating-connectors-azure.html["Cloud Manager からコネクタを作成します"^] （推奨）
-* https://docs.netapp.com/us-en/cloud-manager-connector/task-launching-azure-mktp.html["Azure Marketplace からコネクタを作成します"^]
-* https://docs.netapp.com/us-en/cloud-manager-connector/task-installing-linux.html["既存の Linux ホストにコネクタをインストールします"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Cloud Manager からコネクタを作成します"^] （推奨）
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-azure-mktp.html["Azure Marketplace からコネクタを作成します"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["既存の Linux ホストにコネクタをインストールします"^]
 
 
 
