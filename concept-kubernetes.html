@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>Kubernetes の概要</title>
+  <title>Cloud Manager での Kubernetes によるデータ管理</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Kubernetes の概要" />
+  <meta property="og:title" content="Cloud Manager での Kubernetes によるデータ管理" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/ja-jp/cloud-manager-kubernetes/concept-kubernetes.html" />
-	<meta property="og:description" content="高度なデータ管理のために、マネージド Kubernetes クラスタを Cloud Manager に追加" />
+	<meta property="og:description" content="Astra Trident は、ネットアップが管理している、完全にサポートされているオープンソースプロジェクトです。Kubernetes と Persistent Volume フレームワークとネイティブに統合されている Astra Trident は、ネットアップストレージプラットフォームを任意に組み合わせて実..." />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/cloud-manager-kubernetes/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="高度なデータ管理のために、マネージド Kubernetes クラスタを Cloud Manager に追加">
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Astra Trident は、ネットアップが管理している、完全にサポートされているオープンソースプロジェクトです。Kubernetes と Persistent Volume フレームワークとネイティブに統合されている Astra Trident は、ネットアップストレージプラットフォームを任意に組み合わせて実...">
   <meta name="keywords" content=" kubernetes, k8s, back up kubernetes, back up k8s, discover kubernetes cluster, discover k8s, amazon eks, eks, azure, aks, back up persistent volumes, persistent volumes, kubernetes support"><!-- Icons -->
   <link rel="icon" href="/ja-jp/cloud-manager-kubernetes/images/favicon.ico" type="image/x-icon">
 
@@ -45,11 +45,13 @@
   <link rel="stylesheet" href='/ja-jp/cloud-manager-kubernetes/css/na-utility.css' type='text/css'>
   <link rel="stylesheet" href='/ja-jp/cloud-manager-kubernetes/css/na-sidebar.css' type='text/css'>
   <link rel='stylesheet' href='/ja-jp/cloud-manager-kubernetes/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/ja-jp/cloud-manager-kubernetes/css/custom-dropdown.css' type='text/css'>
   <link rel='stylesheet' href='/ja-jp/cloud-manager-kubernetes/css/na-pagenav.css' type='text/css'>
 
   
   <link rel="stylesheet" href="/ja-jp/cloud-manager-kubernetes/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/ja-jp/cloud-manager-kubernetes/css/tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
   <link rel='stylesheet' href='/ja-jp/cloud-manager-kubernetes/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
@@ -131,7 +133,7 @@
     gtag('config', 'UA-81697994-3');
   }
   </script>
-  <script src='/ja-jp/cloud-manager-kubernetes/js/version-dropdown.js'></script>
+  <script src='/ja-jp/cloud-manager-kubernetes/js/custom-dropdown.js'></script>
   <script src='/ja-jp/cloud-manager-kubernetes/js/FileSaver.min.js'></script>
   <script src='/ja-jp/cloud-manager-kubernetes/js/jszip-utils.min.js'></script>
   <script src='/ja-jp/cloud-manager-kubernetes/js/jszip.min.js'></script>
@@ -139,17 +141,15 @@
 </head>
 
 
-  <body class role="document">
+  <body class role="document" data-flavor="">
     <div id="page" class="n-off-canvas-menu">
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
   
   <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-kubernetes/issues/new?body=Page%3A%20[Kubernetes の概要](https://docs.netapp.com/ja-jp/cloud-manager-kubernetes/concept-kubernetes.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloud-manager-kubernetes/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-kubernetes/issues/new?body=Page%3A%20[Cloud Manager での Kubernetes によるデータ管理](https://docs.netapp.com/ja-jp/cloud-manager-kubernetes/concept-kubernetes.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloud-manager-kubernetes/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
       <a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-kubernetes/blob/main/concept-kubernetes.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloud-manager-kubernetes/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/cloud-manager-kubernetes/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
     </div>
@@ -245,7 +245,8 @@
           data-did-you-mean="{suggestion} を検索" 
           data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?" 
           data-results-found="{hitCount} 件見つかりました"  
-          data-sk-es-pf-indexes=""></div>
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -334,6 +335,9 @@
 </div>
 <div class="n-pdf-body-container">
   <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
         <a target="_blank" href="/ja-jp/cloud-manager-kubernetes/pdfs/fullsite-sidebar/Kubernetes_のドキュメント.pdf" >
           <img src="/ja-jp/cloud-manager-kubernetes/images/pdf.png" width="16" height="16"/>このドキュメントサイトのPDF</a>
 
@@ -346,6 +350,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/cloud-manager-kubernetes/pdfs/sidebar/はじめに.pdf" 
@@ -367,6 +374,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -379,6 +388,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/cloud-manager-kubernetes/pdfs/sidebar/要件.pdf" 
@@ -407,6 +419,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/cloud-manager-kubernetes/pdfs/sidebar/Kubernetes_クラスタを追加.pdf" 
@@ -432,11 +447,47 @@
 
 
 
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/ja-jp/cloud-manager-kubernetes/pdfs/sidebar/Kubernetes_クラスタを管理.pdf" 
+            
+          >
+            <img src="/ja-jp/cloud-manager-kubernetes/images/pdf.png" width="16" height="16"/>
+            Kubernetes クラスタを管理
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
 
 
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ja-jp/cloud-manager-kubernetes/pdfs/sidebar/知識とサポート.pdf" 
@@ -509,6 +560,8 @@
       </a>
       <ul><li class="  active "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-kubernetes/concept-kubernetes.html">
         Kubernetes のデータ管理について説明します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-kubernetes/task-k8s-quick-start.html">
+        クイックスタート
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 要件</div>
       </a>
@@ -527,9 +580,20 @@
         Azure でクラスタを追加
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-kubernetes/task/task-kubernetes-discover-gke.html">
         Google Cloud にクラスタを追加します
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html">
-        Kubernetes クラスタでデータサービスを有効化
-      </a></li><li class="subfolders "><a href="#">
+      </a></li></ul></li><li class="subfolders "><a href="/ja-jp/cloud-manager-kubernetes/concept-manage-k8s.html">
+        <div class="na-navbar-padding"> Kubernetes クラスタを管理</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-kubernetes/task/task-k8s-manage-trident.html">
+        Astra Trident をインストール
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html">
+        ストレージクラスを管理する
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-kubernetes/task/task-k8s-manage-persistent-volumes.html">
+        永続ボリュームを表示します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-kubernetes/task/task-k8s-manage-remove-cluster.html">
+        クラスタを削除
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html">
+        ネットアップのクラウドデータサービスを実現
+      </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 知識とサポート</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/cloud-manager-kubernetes/support/task-support-registration.html">
@@ -549,6 +613,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+
 
   </div>
   
@@ -591,14 +656,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Kubernetes の概要</h1>
+  <h1 class="n-doc__component-detail-heading">Cloud Manager での Kubernetes によるデータ管理</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-04-01 14:20:10 +0000">04/01/2022</time>
+    <time datetime="2022-04-04 21:04:06 +0000">04/04/2022</time>
     
   
 
@@ -608,23 +673,29 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>高度なデータ管理のために、マネージド Kubernetes クラスタを Cloud Manager に追加</p>
+<p>Astra Trident は、ネットアップが管理している、完全にサポートされているオープンソースプロジェクトです。Kubernetes と Persistent Volume フレームワークとネイティブに統合されている Astra Trident は、ネットアップストレージプラットフォームを任意に組み合わせて実行されているシステムから、ボリュームのプロビジョニングと管理をシームレスに行います。 <a href="https://docs.netapp.com/us-en/trident/index.html" target="_blank" rel="noopener">"Trident の詳細をご確認ください"</a>。</p>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="の機能">の機能</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Kubernetes クラスタは、 Cloud Manager を使用して直接管理できます。</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p>キャンバスにクラスタを追加して、ハイブリッドクラウドインフラストラクチャの一部として表示および管理します</p>
+<p>Astra Trident をインストール</p>
 </li>
 <li>
-<p>Cloud Backup Service を使用して永続ボリュームをバックアップする</p>
-<div class="paragraph">
-<p><span class="image"><img src="./media/screenshot-kubernetes-backup.png" alt="Cloud Backup Service の Kubernetes ページのスクリーンショット。 Kubernetes クラスタの 5 つのバックアップジョブが表示されます。"></span></p>
-</div>
+<p>ハイブリッドクラウドインフラの一部としてクラスタを追加、管理</p>
+</li>
+<li>
+<p>ストレージクラスを追加して管理し、作業環境に接続する。</p>
+</li>
+<li>
+<p>Cloud Backup Service を使用して永続ボリュームをバックアップする。</p>
 </li>
 </ul>
 </div>
@@ -634,7 +705,31 @@
 <h2 id="サポートされる-kubernetes-環境">サポートされる Kubernetes 環境</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Cloud Manager は、 Amazon Elastic Kubernetes Service （ Amazon EKS ）および Microsoft Azure Kubernetes Service （ AKS ）で実行されているマネージド Kubernetes クラスタをサポートします。</p>
+<p>Cloud Manager は、で実行されるマネージド Kubernetes クラスタをサポートします。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="kubernetes-reqs-aws.html">"Amazon Elastic Kubernetes Service （ Amazon EKS ）"</a></p>
+</li>
+<li>
+<p><a href="kubernetes-reqs-aks.html">"Microsoft Azure Kubernetes Service （ AKS ）"</a></p>
+</li>
+<li>
+<p><a href="kubernetes-reqs-gke.html">"Google Kubernetes Engine （ GKE ）"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="サポートされている-astra-trident-環境">サポートされている Astra Trident 環境</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>最新バージョンの 4 つの Astra Trident が必要です。Trident は Cloud Manager から直接インストールできます。お勧めします <a href="https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html" target="_blank" rel="noopener">"前提条件を確認します"</a> インストールの前に、</p>
+</div>
+<div class="paragraph">
+<p>Astra Trident をアップグレードするには、 <a href="https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-operator.html" target="_blank" rel="noopener">"オペレータにアップグレードしてください"</a>。</p>
 </div>
 </div>
 </div>
@@ -761,10 +856,7 @@
 </div>
 </footer>
 
-      </div><!-- Elasticsearch JS -->
-      <script type="text/javascript" src='/ja-jp/cloud-manager-kubernetes/js/bundle.js'></script>
-
-      <!-- Syntax Highlighting -->
+      </div><!-- Elasticsearch JS --><script type="text/javascript" src='/ja-jp/cloud-manager-kubernetes/js/bundle.js'></script><!-- Syntax Highlighting -->
       <script type="text/javascript" src='/ja-jp/cloud-manager-kubernetes/js/prism.js'></script>
       <script type="text/javascript" src='/ja-jp/cloud-manager-kubernetes/js/prism-curl.js'></script>
     </div>
