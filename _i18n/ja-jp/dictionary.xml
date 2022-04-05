@@ -5,17 +5,14 @@
   <block id="572154af04ccf23551e78649302c6f7b" category="section-title">Google Cloud で Kubernetes クラスタがサポートされます</block>
   <block id="45cbe8fd766702dd0ad0022cbde336ce" category="paragraph">Cloud Manager を使用して、 Google Cloud で管理対象 Google Kubernetes Engine （ GKE ）クラスタと自己管理型 Kubernetes クラスタを追加および管理できるようになりました。</block>
   <block id="f1b377c7d4b75112665bc3e7ee7c340b" category="inline-link-macro">Google Cloud で Kubernetes クラスタを使用する方法をご確認ください</block>
-  <block id="3ce827c1394c58f2881787b09251ab2d" category="paragraph"><block ref="e7cb8264f65fe12e2e34a432cb2daa9f" category="inline-link-macro-rx"></block>。</block>
   <block id="a654243ef958097102b375693f5579bb" category="section-title">Azure で Kubernetes クラスタがサポートされます</block>
   <block id="8856f1df28666fb615f0de120179dd80" category="paragraph">Cloud Manager を使用して、 Azure で管理対象 Azure Kubernetes クラスタ（ AKS ）と自己管理型 Kubernetes クラスタを追加および管理できるようになりました。</block>
   <block id="8e2d16714747b48d3d5d0993c14ca91c" category="inline-link-macro">Azure での Kubernetes クラスタの使用の開始</block>
-  <block id="2516f4b40f47332c7df68b7816e02b00" category="paragraph"><block ref="2516f4b40f47332c7df68b7816e02b00" category="inline-link-macro-rx"></block></block>
   <block id="1dca9cae8959517f7a37b2277e33b485" category="section-title">AWS での Kubernetes クラスタのサポート</block>
   <block id="40396b2dd864537704e1a71862a49298" category="paragraph">高度なデータ管理のために、管理対象 Kubernetes クラスタを Cloud Manager のキャンバスに追加できるようになりました。</block>
   <block id="9bc9d366922b7839c22a9d3f44b59ab5" category="list-text">Amazon EKS クラスタを検出します</block>
   <block id="23225952418ffe65dda9099dae1c476c" category="list-text">Cloud Backup を使用して永続ボリュームをバックアップする</block>
   <block id="d5f64dd836c164f17e32528a31fdeea5" category="inline-link-macro">Kubernetes のサポートの詳細については、こちらをご覧ください</block>
-  <block id="541ec813f320b6a90ccb3d382d774f7e" category="paragraph"><block ref="b46c52759a0e98b71be9f6aed99e1b0c" category="inline-link-macro-rx"></block>。</block>
   <block id="5629dc3c8dacdcb31e6d3bf6d7586e32" category="admonition">既存の Kubernetes サービス（ * K8s * タブで利用可能）は廃止され、今後のリリースで削除される予定です。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">の機能</block>
   <block id="a0d9f3ae32f1b7df23e0071308b6cbe5" category="inline-image-macro">Cloud Backup Service の Kubernetes ページのスクリーンショット。 Kubernetes クラスタの 5 つのバックアップジョブが表示されます。</block>
@@ -363,12 +360,7 @@
   <block id="6e7cef0ef9634162a88caaa29c694893" category="paragraph"><block ref="6e7cef0ef9634162a88caaa29c694893" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0a7f3527cff1099d537e438e6d62de3f" category="paragraph">リソースページでは、次の操作を実行できます。</block>
   <block id="ae98d4fcb6e8e5720784f6c4936d3fda" category="list-text">Kubernetes クラスタのステータスを表示する</block>
-  <block id="4c1d1c29dc032acaba6d87523245901a" category="list-text">Astra Trident がインストールされていることを確認を参照してください <block ref="345832d3138c1eb0f6633c370a7f6028" category="inline-link-macro-rx"></block>。</block>
-  <block id="1144aea980959108cfaf2514fbf4950d" category="list-text">ストレージクラスを追加および削除する。を参照してください <block ref="9e82adf493a42c7e6eea0f3ece5f1523" category="inline-link-macro-rx"></block>。</block>
-  <block id="148ab235d087e61e2b2f7fd1f1c69a5f" category="list-text">永続ボリュームを表示します。を参照してください <block ref="cd4689f963d360c6dbfc83d0ed5ebd22" category="inline-link-macro-rx"></block>。</block>
-  <block id="001f7c78e2e0007ed1165a22b8a857c7" category="list-text">Kubernetes クラスタをワークスペースから削除を参照してください <block ref="2345a967fe9f27d7be623e42d7d8b4c4" category="inline-link-macro-rx"></block>。</block>
   <block id="c83be9d30dd0d8b55fb8bdbf6f11eb85" category="inline-link-macro">ネットアップのクラウドデータサービスを活用</block>
-  <block id="5988e88f080603d109047fd28346431d" category="list-text">Cloud Backup をアクティブ化または表示します。を参照してください <block ref="970aaadca61cb9a29c8e2b76716ffafe" category="inline-link-macro-rx"></block>。</block>
   <block id="33729732e4c013e81e5576920fedbc76" category="sidebar">ネットアップのクラウドデータサービスを実現</block>
   <block id="ad806d4b803a5aa7358400786d14dec0" category="section-title">2022 年 4 月 4 日</block>
   <block id="a84f0102d02caeeb1c0e554f032c6e35" category="paragraph">Kubernetes クラスタ管理の統合がクラスタ作業環境から直接強化されました。新しい <block ref="a7ce12c998c9439767584776d325ea5b" category="inline-link-macro-rx"></block> すぐに運用を開始できます。</block>
@@ -394,4 +386,12 @@
   <block id="cd6ebc8356b1da3789ba04ae3e5aaea3" category="list-text"><block ref="aa0dc252414fb173eaea918703c4a84f" category="inline-link-macro-rx"></block> （推奨）</block>
   <block id="946fbd834f2d7dd02243acdd3cd2af41" category="list-text"><block ref="946fbd834f2d7dd02243acdd3cd2af41" category="inline-link-macro-rx"></block></block>
   <block id="6daf52898d494bb924b8e794cabb00ca" category="list-text"><block ref="6daf52898d494bb924b8e794cabb00ca" category="inline-link-macro-rx"></block></block>
+  <block id="6fcf7676e8aae6ddc7b3f104efce8aab" category="paragraph"><block ref="5416dc5374fce9a230fcbd66732d82fb" category="inline-link-macro-rx"></block>。</block>
+  <block id="7f3fba83864e800e754c057187c91c9a" category="paragraph"><block ref="7f3fba83864e800e754c057187c91c9a" category="inline-link-macro-rx"></block></block>
+  <block id="4e8dc58f86c5b2a120ce6625e2c53adf" category="paragraph"><block ref="ca8428b0b36dc1f5bee5c45f13cb9819" category="inline-link-macro-rx"></block>。</block>
+  <block id="ae0592ef5303fb9aef624fe7d88c9df0" category="list-text">Astra Trident がインストールされていることを確認を参照してください <block ref="1a59dd77a0d64111faec261144239ca1" category="inline-link-macro-rx"></block>。</block>
+  <block id="37b5997855958384cd2d8f88d0ea2dd5" category="list-text">ストレージクラスを追加および削除する。を参照してください <block ref="b3baecb7f739f8467c020eefaf640928" category="inline-link-macro-rx"></block>。</block>
+  <block id="642589473fadbb6740e9f7d1a3850cf1" category="list-text">永続ボリュームを表示します。を参照してください <block ref="5d330c78fdbd034ad3466dadfcb8a623" category="inline-link-macro-rx"></block>。</block>
+  <block id="89a12c12c4f14698d4d0f49fd915edb9" category="list-text">Kubernetes クラスタをワークスペースから削除を参照してください <block ref="33d1886382ffb71c3c53768c25f3a54f" category="inline-link-macro-rx"></block>。</block>
+  <block id="cc4669d33ef06bf93b19ebf4331f6973" category="list-text">Cloud Backup をアクティブ化または表示します。を参照してください <block ref="f48a95ae0530624cb3f954263c78705c" category="inline-link-macro-rx"></block>。</block>
 </blocks>

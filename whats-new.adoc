@@ -44,7 +44,7 @@ Kubernetes クラスタ管理の統合がクラスタ作業環境から直接強
 
 Cloud Manager を使用して、 Google Cloud で管理対象 Google Kubernetes Engine （ GKE ）クラスタと自己管理型 Kubernetes クラスタを追加および管理できるようになりました。
 
-link:kubernetes-reqs-gke.html["Google Cloud で Kubernetes クラスタを使用する方法をご確認ください"]。
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud で Kubernetes クラスタを使用する方法をご確認ください"]。
 
 
 
@@ -56,7 +56,7 @@ link:kubernetes-reqs-gke.html["Google Cloud で Kubernetes クラスタを使用
 
 Cloud Manager を使用して、 Azure で管理対象 Azure Kubernetes クラスタ（ AKS ）と自己管理型 Kubernetes クラスタを追加および管理できるようになりました。
 
-link:kubernetes-reqs-aks.html["Azure での Kubernetes クラスタの使用の開始"]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure での Kubernetes クラスタの使用の開始"]
 
 
 
@@ -72,7 +72,7 @@ link:kubernetes-reqs-aks.html["Azure での Kubernetes クラスタの使用の�
 * Cloud Backup を使用して永続ボリュームをバックアップする
 
 
-link:concept-kubernetes.html["Kubernetes のサポートの詳細については、こちらをご覧ください"]。
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["Kubernetes のサポートの詳細については、こちらをご覧ください"]。
 
 
 TIP: 既存の Kubernetes サービス（ * K8s * タブで利用可能）は廃止され、今後のリリースで削除される予定です。

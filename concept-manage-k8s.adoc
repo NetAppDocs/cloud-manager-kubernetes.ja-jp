@@ -25,9 +25,9 @@ image:screenshot-k8s-resource-page.png["クラスタの詳細を示す Kubernete
 リソースページでは、次の操作を実行できます。
 
 * Kubernetes クラスタのステータスを表示する
-* Astra Trident がインストールされていることを確認を参照してください link:task-k8s-manage-trident.html["Astra Trident をインストール"]。
-* ストレージクラスを追加および削除する。を参照してください link:task-k8s-manage-storage-classes.html["ストレージクラスを管理する"]。
-* 永続ボリュームを表示します。を参照してください link:task-k8s-manage-persistent-volumes.html["永続ボリュームを表示します"]。
-* Kubernetes クラスタをワークスペースから削除を参照してください link:task-k8s-manage-remove-cluster.html["クラスタを削除"]。
-* Cloud Backup をアクティブ化または表示します。を参照してください link:task-kubernetes-enable-services.html["ネットアップのクラウドデータサービスを活用"]。
+* Astra Trident がインストールされていることを確認を参照してください link:./task/task-k8s-manage-trident.html["Astra Trident をインストール"]。
+* ストレージクラスを追加および削除する。を参照してください link:./task/task-k8s-manage-storage-classes.html["ストレージクラスを管理する"]。
+* 永続ボリュームを表示します。を参照してください link:./task/task-k8s-manage-persistent-volumes.html["永続ボリュームを表示します"]。
+* Kubernetes クラスタをワークスペースから削除を参照してください link:./task/task-k8s-manage-remove-cluster.html["クラスタを削除"]。
+* Cloud Backup をアクティブ化または表示します。を参照してください link:./task/task-kubernetes-enable-services.html["ネットアップのクラウドデータサービスを活用"]。
 
