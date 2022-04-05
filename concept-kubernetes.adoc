@@ -33,9 +33,9 @@ Kubernetes クラスタは、 Cloud Manager を使用して直接管理できま
 
 Cloud Manager は、で実行されるマネージド Kubernetes クラスタをサポートします。
 
-* link:kubernetes-reqs-aws.html["Amazon Elastic Kubernetes Service （ Amazon EKS ）"]
-* link:kubernetes-reqs-aks.html["Microsoft Azure Kubernetes Service （ AKS ）"]
-* link:kubernetes-reqs-gke.html["Google Kubernetes Engine （ GKE ）"]
+* link:/requirements/kubernetes-reqs-aws.html["Amazon Elastic Kubernetes Service （ Amazon EKS ）"]
+* link:/requirements/kubernetes-reqs-aks.html["Microsoft Azure Kubernetes Service （ AKS ）"]
+* link:/requirements/kubernetes-reqs-gke.html["Google Kubernetes Engine （ GKE ）"]
 
 
 

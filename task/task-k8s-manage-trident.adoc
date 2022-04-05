@@ -15,7 +15,7 @@ summary: Managed Kubernetes クラスタを Canvas に追加したら、 Cloud M
 [role="lead"]
 Managed Kubernetes クラスタを Canvas に追加したら、 Cloud Manager を使用して、互換性のある Astra Trident インストールまたは Astra Trident インストールを確認できます。最新バージョンの 4 つの Astra Trident が必要です。
 
-Astra Trident の詳細については、を参照してください link:https://docs.netapp.com/us-en/trident/index.html["Astra Trident のドキュメント"]。
+Astra Trident の詳細については、を参照してください link:https://docs.netapp.com/us-en/trident/index.html["Astra Trident のドキュメント"^]。
 
 
 NOTE: Astra Trident がインストールされていない場合や、互換性のないバージョンの Astra Trident がインストールされている場合は、クラスタに必要な処理があることが表示されます。

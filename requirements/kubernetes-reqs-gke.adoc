@@ -15,7 +15,8 @@ summary: Cloud Manager を使用して、 Google で管理対象 Google Kubernet
 [role="lead"]
 Cloud Manager を使用して、 Google で管理対象 Google Kubernetes Engine （ GKE ）クラスタと自己管理型 Kubernetes クラスタを追加および管理できます。Cloud Manager にクラスタを追加する前に、次の要件を満たしていることを確認してください。
 
-このトピックでは、 _Kubernetes cluster_where 構成は、 GKE クラスタと自己管理型 Kubernetes クラスタで同じです。クラスタタイプは設定が異なる場所で指定します。
+
+NOTE: このトピックでは、 _Kubernetes cluster_where 構成は、 GKE クラスタと自己管理型 Kubernetes クラスタで同じです。クラスタタイプは設定が異なる場所で指定します。
 
 
 
@@ -44,8 +45,8 @@ Kubernetes クラスタを検出および管理するには、 Google の Cloud 
 
 次のリンクのいずれかの手順に従います。
 
-* link:task_creating_connectors_gcp.html["Cloud Manager からコネクタを作成します"] （推奨）
-* link:task_installing_linux.html["既存の Linux ホストにコネクタをインストールします"]
+* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Cloud Manager からコネクタを作成します"^] （推奨）
+* link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["既存の Linux ホストにコネクタをインストールします"^]
 
 
 

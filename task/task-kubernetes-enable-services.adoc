@@ -17,6 +17,6 @@ summary: 管理対象の Kubernetes クラスタを Canvas に追加すると、
 
 現時点では、 Kubernetes クラスタで Cloud Backup がサポートされます。Cloud Backup を使用して、永続ボリュームをオブジェクトストレージにバックアップできます。
 
-link:task_backup_kubernetes_to_s3.html["永続ボリュームのバックアップ方法については、 Cloud Backup のドキュメントを参照してください"]。
+link:https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-kubernetes-to-s3.html["永続ボリュームのバックアップ方法については、 Cloud Backup のドキュメントを参照してください"^]。
 
 image:screenshot-kubernetes-backup.png["Cloud Backup Service の Kubernetes ページのスクリーンショット。 Kubernetes クラスタの 5 つのバックアップジョブが表示されます。"]

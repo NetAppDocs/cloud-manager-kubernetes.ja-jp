@@ -23,16 +23,15 @@ Cloud Manager の Kubernetes の新機能をご確認ください。
 
 === Cloud Manager のリソースページを使用して Kubernetes クラスタを管理
 
-* Kubernetes クラスタ管理の統合がクラスタ作業環境から直接強化されました。クラスタリソースのページで次の操作を実行できるようになりました。
-+
-** link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["Astra Trident をインストール"]
-** link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html["ストレージクラスを追加する"]
-** link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-persistent-volumes.html["永続ボリュームを表示します"]
-** link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-remove-cluster.html["クラスタを削除"]
-** link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html["データサービスを有効化"]
+Kubernetes クラスタ管理の統合がクラスタ作業環境から直接強化されました。新しい link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-quick-start.html["クイックスタート"] すぐに運用を開始できます。
 
+クラスタリソースのページで次の操作を実行できるようになりました。
 
-* 新しい link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-quick-start.html["クイックスタート"] すぐに運用を開始できます。
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["Astra Trident をインストール"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html["ストレージクラスを追加する"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-persistent-volumes.html["永続ボリュームを表示します"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-remove-cluster.html["クラスタを削除"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-enable-services.html["データサービスを有効化"]
 
 
 
