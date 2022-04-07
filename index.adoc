@@ -5,7 +5,7 @@ permalink: index.html
 lead: Add your managed-Kubernetes clusters to Cloud Manager for advanced data management. 
 summary: 高度なデータ管理のために、管理対象 Kubernetes クラスタを Cloud Manager に追加します。 
 ---
-= Kubernetes のドキュメント
+= Kubernetes クラスタのドキュメント
 :hardbreaks:
 :nofooter: 
 :icons: font

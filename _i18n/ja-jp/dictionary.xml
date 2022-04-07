@@ -138,7 +138,6 @@
   <block id="0c90ae4dc73f81dbbd0a6e0299f5deb5" category="paragraph"><block ref="0c90ae4dc73f81dbbd0a6e0299f5deb5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4ebffaff3187e96f25bb8b4b25978bda" category="list-text">自己管理型の Kubernetes クラスタ * を導入する場合は、許可されたユーザのユーザ名が必要です。</block>
   <block id="e59cbc41f2797427c91406bb0b03401e" category="summary">高度なデータ管理のために、管理対象 Kubernetes クラスタを Cloud Manager に追加します。</block>
-  <block id="d9348d075dc7b3c91cff99d56dfc327b" category="doc">Kubernetes のドキュメント</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
   <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
@@ -394,4 +393,5 @@
   <block id="642589473fadbb6740e9f7d1a3850cf1" category="list-text">永続ボリュームを表示します。を参照してください <block ref="5d330c78fdbd034ad3466dadfcb8a623" category="inline-link-macro-rx"></block>。</block>
   <block id="89a12c12c4f14698d4d0f49fd915edb9" category="list-text">Kubernetes クラスタをワークスペースから削除を参照してください <block ref="33d1886382ffb71c3c53768c25f3a54f" category="inline-link-macro-rx"></block>。</block>
   <block id="cc4669d33ef06bf93b19ebf4331f6973" category="list-text">Cloud Backup をアクティブ化または表示します。を参照してください <block ref="f48a95ae0530624cb3f954263c78705c" category="inline-link-macro-rx"></block>。</block>
+  <block id="335c34584cec7a2f7345f04424506de1" category="doc">Kubernetes クラスタのドキュメント</block>
 </blocks>
