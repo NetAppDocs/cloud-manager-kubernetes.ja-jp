@@ -179,7 +179,6 @@
   <block id="6e53f86d2931b115352479b77b41a90e" category="inline-image-macro">Kubernetes クラスタのインポートページのスクリーンショットで、構成ファイルと使用可能なクラスタの表を示しています。</block>
   <block id="c0051c23ce1a6dfb0a01449b18d415ad" category="paragraph"><block ref="c0051c23ce1a6dfb0a01449b18d415ad" category="inline-image-macro-rx" type="image"></block></block>
   <block id="88115501de56483f3bf8dd5514ce1d84" category="paragraph">現時点では、 Kubernetes クラスタで Cloud Backup がサポートされます。Cloud Backup を使用して、永続ボリュームをオブジェクトストレージにバックアップできます。</block>
-  <block id="963408f4aa8e949d60c3b0befc33267d" category="inline-link">永続ボリュームのバックアップ方法については、 Cloud Backup のドキュメントを参照してください</block>
   <block id="a55035d13d56568118050b48f14c492f" category="summary">Amazon Elastic Kubernetes Service （ Amazon EKS ）クラスタを Cloud Manager に追加して、永続ボリュームの Amazon S3 へのバックアップを開始できるようにします。</block>
   <block id="293e3749aa00f6ba4c48a0f2d8f93ba2" category="doc">Cloud Manager に Amazon Kubernetes クラスタを追加</block>
   <block id="29508a151c67e3d0dd86c039a47344fd" category="list-text">Amazon Web Services * &gt; * Kubernetes Cluster * を選択し、 * Next * をクリックします。</block>
@@ -368,7 +367,6 @@
   <block id="ef1bf4095b622ba80ac24b48b8e45eac" category="section-title">2022 年 1 月 11 日</block>
   <block id="f61163b681442ac500a8018c87241770" category="section-title">2021 年 11 月 28 日</block>
   <block id="49884bb39e4730239c5590a42f88d306" category="paragraph">Astra Trident の詳細については、を参照してください <block ref="d243cca937364184efa824b0525b876a" category="inline-link-macro-rx"></block>。</block>
-  <block id="6fbf44e98207180f6dea3f48ebff3214" category="paragraph"><block ref="5f51a9553940e8daed7fd1ec3a5d3f5a" category="inline-link-macro-rx"></block>。</block>
   <block id="72cf03e83eb761652a0d13086f72c9d7" category="paragraph"><block ref="72cf03e83eb761652a0d13086f72c9d7" category="inline-link-macro-rx"></block></block>
   <block id="4a485bbe8e1857cd9e015d159f30b24d" category="paragraph"><block ref="4a485bbe8e1857cd9e015d159f30b24d" category="inline-link-macro-rx"></block></block>
   <block id="a29db47c768f9047aab40d9abfb20adb" category="paragraph"><block ref="a29db47c768f9047aab40d9abfb20adb" category="inline-link-macro-rx"></block></block>
@@ -394,4 +392,6 @@
   <block id="89a12c12c4f14698d4d0f49fd915edb9" category="list-text">Kubernetes クラスタをワークスペースから削除を参照してください <block ref="33d1886382ffb71c3c53768c25f3a54f" category="inline-link-macro-rx"></block>。</block>
   <block id="cc4669d33ef06bf93b19ebf4331f6973" category="list-text">Cloud Backup をアクティブ化または表示します。を参照してください <block ref="f48a95ae0530624cb3f954263c78705c" category="inline-link-macro-rx"></block>。</block>
   <block id="335c34584cec7a2f7345f04424506de1" category="doc">Kubernetes クラスタのドキュメント</block>
+  <block id="7f502b44c9ac6d1d030af7019328b0f2" category="inline-link-macro">Cloud Backup を使用して Kubernetes クラスタのデータを保護する方法について説明します</block>
+  <block id="608303aeee3cf05fa80edbe0bfe6fa7f" category="paragraph"><block ref="6bac3e672a275b3f2755f168dc31fbab" category="inline-link-macro-rx"></block>。</block>
 </blocks>
