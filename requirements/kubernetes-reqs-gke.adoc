@@ -134,7 +134,7 @@ Kubernetes クラスタのバックアップとリストアを有効にするた
 
 [source, yaml]
 ----
-NEED FROM apiVersion: rbac.authorization.k8s.io/v1
+apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
     name: cloudmanager-access-clusterrole
