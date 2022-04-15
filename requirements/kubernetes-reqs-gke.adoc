@@ -6,6 +6,7 @@ summary: Cloud Manager を使用して、 Google で管理対象 Google Kubernet
 ---
 = Google Cloud の Kubernetes クラスタの要件
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Astra Trident は、ネットアップが管理している、完全に
 ---
 = Cloud Manager での Kubernetes によるデータ管理
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

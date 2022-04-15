@@ -6,6 +6,7 @@ summary: 管理対象 - Kubernetes クラスタをキャンバスに追加した
 ---
 = Kubernetes クラスタをワークスペースから削除
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

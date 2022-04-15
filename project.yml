@@ -68,7 +68,7 @@ homepage:
     - title: Kubernetes のデータ管理について説明します
       url: "/concept-kubernetes.html"
     - title: クイックスタート
-      url: "/task-k8s-quick-start.html"
+      url: "/task/task-k8s-quick-start.html"
   - title: 要件
     links:
     - title: AWS 上の Kubernetes クラスタ

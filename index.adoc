@@ -7,6 +7,7 @@ summary: 高度なデータ管理のために、管理対象 Kubernetes クラ�
 ---
 = Kubernetes クラスタのドキュメント
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

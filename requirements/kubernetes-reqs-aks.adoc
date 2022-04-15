@@ -6,6 +6,7 @@ summary: Cloud Manager を使用して、 Azure で管理対象 Azure Kubernetes
 ---
 = Azure での Kubernetes クラスタの要件
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

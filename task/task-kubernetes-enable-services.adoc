@@ -6,6 +6,7 @@ summary: 管理対象の Kubernetes クラスタを Canvas に追加すると、
 ---
 = ネットアップのクラウドデータサービスを Kubernetes クラスタで使用
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

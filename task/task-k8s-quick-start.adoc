@@ -6,6 +6,7 @@ summary: Kubernetes クラスタを Cloud Manager に追加して、いくつか
 ---
 = Kubernetes クラスタの導入を開始する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

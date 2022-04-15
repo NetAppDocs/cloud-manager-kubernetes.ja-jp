@@ -6,6 +6,7 @@ summary: Kubernetes クラスタを Cloud Manager に追加して、 Azure へ�
 ---
 = Azure Kubernetes クラスタを Cloud Manager に追加
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

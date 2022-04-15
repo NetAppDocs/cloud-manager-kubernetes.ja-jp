@@ -6,6 +6,7 @@ summary: Cloud Manager を使用して、 Astra Trident のインストール、
 ---
 = Kubernetes クラスタを管理
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

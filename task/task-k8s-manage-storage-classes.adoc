@@ -6,6 +6,7 @@ summary: 管理対象の Kubernetes クラスタを Canvas に追加すると、
 ---
 = ストレージクラスを管理する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

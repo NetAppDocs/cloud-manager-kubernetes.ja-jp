@@ -6,6 +6,7 @@ summary: Amazon Elastic Kubernetes Service （ Amazon EKS ）クラスタを Clo
 ---
 = AWS での Kubernetes クラスタの要件
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Managed Kubernetes クラスタを Canvas に追加したら、 Cloud M
 ---
 = Astra Trident をインストール
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

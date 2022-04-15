@@ -6,6 +6,7 @@ summary: Amazon Elastic Kubernetes Service （ Amazon EKS ）クラスタを Clo
 ---
 = Cloud Manager に Amazon Kubernetes クラスタを追加
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

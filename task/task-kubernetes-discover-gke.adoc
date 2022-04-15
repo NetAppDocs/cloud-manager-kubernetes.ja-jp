@@ -6,6 +6,7 @@ summary: Kubernetes クラスタを検出または Cloud Manager にインポー
 ---
 = Cloud Manager に Google Cloud Kubernetes クラスタを追加
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
