@@ -17,19 +17,14 @@ summary: 管理対象の Kubernetes クラスタを Canvas に追加すると、
 管理対象の Kubernetes クラスタを Canvas に追加すると、 Cloud Manager を使用してストレージクラスを管理できるようになります。
 
 
-NOTE: ストレージクラスが定義されていない場合は、「必須」の操作がクラスタに表示されます。
+NOTE: ストレージクラスが定義されていない場合は、「必須」の操作がクラスタに表示されます。Canvas上のクラスタをダブルクリックすると、アクションページが開き、ストレージクラスが追加されます。
 
 
 
-== ストレージクラスを追加する
+== ストレージクラスを追加します
 
 .手順
-. キャンバスで Kubernetes 作業環境をダブルクリックするか、 * 作業環境の入力 * をクリックします。
-. 最新の 4 つのバージョンの Astra Trident がインストールされていることを確認
-. Add Storage Class * をクリックして、 Kubernetes クラスタのストレージクラスを定義します。
-+
-image:screenshot-k8s-add-storage-class.png["ストレージクラスの追加ボタンを示す Kubernetes リソースページのスクリーンショット"]
-
+. キャンバスからKubernetes作業環境をCloud Volumes ONTAP 作業環境にドラッグアンドドロップして、ストレージクラスウィザードを開きます。
 . ストレージクラスの名前を指定し、定義オプションを選択して、 * 次へ * をクリックします。
 +
 image:screenshot-k8s-define-storage-class.png["Kubernetes ストレージクラスの定義オプションを示すスクリーンショット"]

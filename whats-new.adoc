@@ -18,6 +18,18 @@ Cloud Manager の Kubernetes の新機能をご確認ください。
 
 
 
+== 2022年5月8日
+
+
+
+=== ドラッグアンドドロップしてストレージクラスを追加します
+
+KubernetesクラスタをドラッグしてCloud Volumes ONTAP 作業環境にドロップし、ストレージクラスをキャンバスから直接追加できるようになりました。
+
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを追加します"]
+
+
+
 == 2022 年 4 月 4 日
 
 
