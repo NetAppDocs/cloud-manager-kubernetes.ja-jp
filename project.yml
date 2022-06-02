@@ -7,6 +7,19 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
+  filter:
+    label: クラウドプロバイダ
+    default: すべてのクラウドプロバイダ
+    options:
+    - name: Amazon Web Services の
+      alias: AWS
+      id: aws
+    - name: Google Cloud
+      alias: Google Cloud
+      id: gcp
+    - name: Microsoft Azure
+      alias: Azure
+      id: azure
   langs: ja-jp,us-en,zh-cn,zh-tw,ko-kr
 sidebar:
   entries:
@@ -25,18 +38,24 @@ sidebar:
   - title: 要件
     entries:
     - title: AWS 上の Kubernetes クラスタ
+      flavor: aws
       url: "/requirements/kubernetes-reqs-aws.html"
     - title: Azure 上の Kubernetes クラスタ
+      flavor: azure
       url: "/requirements/kubernetes-reqs-aks.html"
     - title: Google Cloud の Kubernetes クラスタ
+      flavor: gcp
       url: "/requirements/kubernetes-reqs-gke.html"
   - title: Kubernetes クラスタを追加
     entries:
     - title: AWS にクラスタを追加します
+      flavor: aws
       url: "/task/task-kubernetes-discover-aws.html"
     - title: Azure でクラスタを追加
+      flavor: azure
       url: "/task/task-kubernetes-discover-azure.html"
     - title: Google Cloud にクラスタを追加します
+      flavor: gcp
       url: "/task/task-kubernetes-discover-gke.html"
   - title: Kubernetes クラスタを管理
     url: "/concept-manage-k8s.html"
@@ -72,18 +91,24 @@ homepage:
   - title: 要件
     links:
     - title: AWS 上の Kubernetes クラスタ
+      flavor: aws
       url: "/requirements/kubernetes-reqs-aws.html"
     - title: Azure 上の Kubernetes クラスタ
+      flavor: azure
       url: "/requirements/kubernetes-reqs-aks.html"
     - title: Google Cloud の Kubernetes クラスタ
+      flavor: gcp
       url: "/requirements/kubernetes-reqs-gke.html"
   - title: Kubernetes クラスタを追加
     links:
     - title: AWS にクラスタを追加します
+      flavor: aws
       url: "/task/task-kubernetes-discover-aws.html"
     - title: Azure でクラスタを追加
+      flavor: azure
       url: "/task/task-kubernetes-discover-azure.html"
     - title: Google Cloud にクラスタを追加します
+      flavor: gcp
       url: "/task/task-kubernetes-discover-gke.html"
   - title: Kubernetes クラスタを管理
     links:

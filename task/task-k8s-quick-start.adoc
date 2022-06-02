@@ -25,26 +25,50 @@ Kubernetes クラスタを Cloud Manager に追加して、いくつかの高度
 [role="quick-margin-para"]
 ご使用の環境がクラスタタイプの前提条件を満たしていることを確認してください。
 
-[role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["AWS での Kubernetes クラスタの要件"^]
+ifdef::aws[]
 
 [role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure での Kubernetes クラスタの要件"^]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["AWS での Kubernetes クラスタの要件"]
+
+endif::aws[]
+
+ifdef::azure[]
 
 [role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud の Kubernetes クラスタの要件"^]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure での Kubernetes クラスタの要件"]
+
+endif::azure[]
+
+ifdef::gcp[]
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud の Kubernetes クラスタの要件"]
+
+endif::gcp[]
 
 [role="quick-margin-para"]
 Kubernetes クラスタを追加し、 Cloud Manager を使用して作業環境に接続できます。
 
-[role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-aws.html["Amazon Kubernetes クラスタを追加"^]
+ifdef::aws[]
 
 [role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-azure.html["Azure Kubernetes クラスタを追加"^]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-aws.html["Amazon Kubernetes クラスタを追加"]
+
+endif::aws[]
+
+ifdef::azure[]
 
 [role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-gke.html["Google Cloud Kubernetes クラスタを追加"^]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-azure.html["Azure Kubernetes クラスタを追加"]
+
+endif::azure[]
+
+ifdef::gcp[]
+
+[role="quick-margin-para"]
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-kubernetes-discover-gke.html["Google Cloud Kubernetes クラスタを追加"]
+
+endif::gcp[]
 
 [role="quick-margin-para"]
 Kubernetes の標準のインターフェイスと構成要素を使用して、永続ボリュームを要求および管理できます。Cloud Manager では、 NFS ストレージクラスと iSCSI ストレージクラスが作成されます。このクラスは、永続的ボリュームのプロビジョニング時に使用できます。
