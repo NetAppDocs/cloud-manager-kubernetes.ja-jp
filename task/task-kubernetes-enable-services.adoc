@@ -20,4 +20,4 @@ summary: 管理対象の Kubernetes クラスタを Canvas に追加すると、
 
 link:https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-kubernetes-backup-to-cloud.html["Cloud Backup を使用して Kubernetes クラスタのデータを保護する方法について説明します"^]。
 
-image:screenshot-kubernetes-backup.png["Cloud Backup Service の Kubernetes ページのスクリーンショット。 Kubernetes クラスタの 5 つのバックアップジョブが表示されます。"]
+image:screenshot-k8s-backup.png["Cloud Backup Service の Kubernetes ページのスクリーンショット。 Kubernetes クラスタの 5 つのバックアップジョブが表示されます。"]

@@ -16,7 +16,6 @@
   <block id="5629dc3c8dacdcb31e6d3bf6d7586e32" category="admonition">既存の Kubernetes サービス（ * K8s * タブで利用可能）は廃止され、今後のリリースで削除される予定です。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">の機能</block>
   <block id="a0d9f3ae32f1b7df23e0071308b6cbe5" category="inline-image-macro">Cloud Backup Service の Kubernetes ページのスクリーンショット。 Kubernetes クラスタの 5 つのバックアップジョブが表示されます。</block>
-  <block id="fdd5390b518e6b0ee63a9f6d25352e4d" category="paragraph"><block ref="fdd5390b518e6b0ee63a9f6d25352e4d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="acb13b8754d0f14e58090cb4826d589f" category="section-title">サポートされる Kubernetes 環境</block>
   <block id="c9ece1f2227c56942142d90092ca7fd2" category="section-title">サポートされるバックエンドストレージ</block>
   <block id="55a560dfd687efd2106430144cfa5892" category="paragraph">ネットアップの Astra Trident は各 Kubernetes クラスタにインストールする必要があり、 Cloud Volumes ONTAP はクラスタのバックエンドストレージとして設定する必要があります。</block>
@@ -257,7 +256,6 @@
   <block id="2204d229f6006a328688918431aab2cf" category="paragraph"><block ref="2204d229f6006a328688918431aab2cf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="46213c151b950647dd4e20d3c0e13222" category="list-text">クラスタに接続する作業環境を選択します。[ 追加（ Add ） ] をクリックします。</block>
   <block id="e0c9fa0852fea63dc1167ab3f2b85fb4" category="inline-image-macro">Kubernetes クラスタ用の作業環境の選択を示すスクリーンショット。</block>
-  <block id="f99a712980063704c4a584a6683234a2" category="paragraph"><block ref="f99a712980063704c4a584a6683234a2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6f78048f5e23feba1c2dfeeb70958d2b" category="paragraph">をクリックすると、 Kubernetes クラスタのリソースページでストレージクラスを表示できます。</block>
   <block id="24d4e555e1f7b6ed662909980cd4b88c" category="inline-image-macro">Kubernetes リソースページの「ストレージクラスの表示」を示すスクリーンショット。</block>
   <block id="a770b061844a8f658a79e0452983186e" category="paragraph"><block ref="a770b061844a8f658a79e0452983186e" category="inline-image-macro-rx" type="image"></block></block>
@@ -462,4 +460,6 @@
   <block id="879701946bb2bc7241d0f85fd843455a" category="paragraph">endif::azure[]</block>
   <block id="6e1e9c83b80f4d22d34cbdf60a71383b" category="paragraph">ifdef::gcp[]</block>
   <block id="310c228207a0f8446bbe4c5d16978cb7" category="paragraph">endif::gcp[]</block>
+  <block id="9caa4ae51ebcef018806ad6f192f8ff2" category="paragraph"><block ref="9caa4ae51ebcef018806ad6f192f8ff2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8fe98c5be333c8d7ddf225ff536de10d" category="paragraph"><block ref="8fe98c5be333c8d7ddf225ff536de10d" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

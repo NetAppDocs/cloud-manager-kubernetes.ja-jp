@@ -31,7 +31,7 @@ image:screenshot-k8s-define-storage-class.png["Kubernetes ストレージクラ�
 
 . クラスタに接続する作業環境を選択します。[ 追加（ Add ） ] をクリックします。
 +
-image:screenshot-k8s-we-storage-class.png["Kubernetes クラスタ用の作業環境の選択を示すスクリーンショット。"]
+image:screenshot-k8s-select-storage-class.png["Kubernetes クラスタ用の作業環境の選択を示すスクリーンショット。"]
 
 
 
