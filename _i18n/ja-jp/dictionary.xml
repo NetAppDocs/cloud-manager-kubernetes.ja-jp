@@ -195,8 +195,6 @@
   <block id="bb45c01f0defa7d4025530e60da27413" category="list-text">Kubernetes クラスタ管理者から提供されたクラスタ証明書をアップロードします。</block>
   <block id="88191bdb31785cfc9f3930579c08bc01" category="inline-image-macro">認証局、クライアントキー、およびクライアント証明書のアップロードに使用されるクラスタ証明書ページのスクリーンショット。</block>
   <block id="590894349703ecdfd70867c311b0ca06" category="paragraph"><block ref="590894349703ecdfd70867c311b0ca06" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">Cloud Manager のすべてのドキュメント</block>
-  <block id="f583f925a6121ffc465f204cf97e47f2" category="sidebar">Kubernetes のドキュメント</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリースノート</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
   <block id="9a389df4347e021124f6973de0521d46" category="sidebar">Kubernetes のデータ管理について説明します</block>
@@ -427,7 +425,6 @@
   <block id="0f808082ee99c2acfbcb1661162034f6" category="paragraph">KubernetesクラスタをドラッグしてCloud Volumes ONTAP 作業環境にドロップし、ストレージクラスをキャンバスから直接追加できるようになりました。</block>
   <block id="d23895cd28f2e8e5d3074279cea7aacf" category="inline-link-macro">ストレージクラスを追加します</block>
   <block id="2556925e0b340fdd647987c6af7fbee9" category="paragraph"><block ref="2556925e0b340fdd647987c6af7fbee9" category="inline-link-macro-rx"></block></block>
-  <block id="1eec33c68401a6eebb58a392153f045b" category="admonition">ストレージクラスが定義されていない場合は、「必須」の操作がクラスタに表示されます。Canvas上のクラスタをダブルクリックすると、アクションページが開き、ストレージクラスが追加されます。</block>
   <block id="a5cc9f7714a0767ece3c08caff06314d" category="list-text">キャンバスからKubernetes作業環境をCloud Volumes ONTAP 作業環境にドラッグアンドドロップして、ストレージクラスウィザードを開きます。</block>
   <block id="19f4ed17c6ec00f67063b70e40bfc661" category="section-title">2022年5月4日</block>
   <block id="79ee39f20c9b076e39473401e33c5f12" category="list-text"><block ref="79ee39f20c9b076e39473401e33c5f12" category="inline-link-macro-rx"></block></block>
@@ -462,4 +459,6 @@
   <block id="310c228207a0f8446bbe4c5d16978cb7" category="paragraph">endif::gcp[]</block>
   <block id="9caa4ae51ebcef018806ad6f192f8ff2" category="paragraph"><block ref="9caa4ae51ebcef018806ad6f192f8ff2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8fe98c5be333c8d7ddf225ff536de10d" category="paragraph"><block ref="8fe98c5be333c8d7ddf225ff536de10d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d3addf40fe274281b5a1b857dc827df3" category="admonition">ストレージクラスが定義されていない場合は、「必須」の操作がクラスタに表示されます。Canvas上のクラスタをダブルクリックすると、アクションページが開き、ストレージクラスが追加されます。</block>
+  <block id="61d60f1794bd3201467c51134b8ed076" category="sidebar">Kubernetesクラスタのドキュメント</block>
 </blocks>
