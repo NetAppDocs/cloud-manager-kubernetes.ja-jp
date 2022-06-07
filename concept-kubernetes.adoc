@@ -51,7 +51,7 @@ Astra Trident をアップグレードするには、 link:https://docs.netapp.c
 
 == サポートされるバックエンドストレージ
 
-ネットアップの Astra Trident は各 Kubernetes クラスタにインストールする必要があり、 Cloud Volumes ONTAP はクラスタのバックエンドストレージとして設定する必要があります。
+ネットアップのAstra Tridentは各Kubernetesクラスタにインストールする必要があり、Cloud Volumes ONTAP またはAmazon FSX for ONTAP はクラスタのバックエンドストレージとして設定する必要があります。
 
 
 
