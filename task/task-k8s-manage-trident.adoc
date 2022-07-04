@@ -4,7 +4,7 @@ permalink: /task/task-k8s-manage-trident.html
 keywords: kubernetes, k8s, install astra trident, kubernetes support 
 summary: Managed Kubernetes クラスタを Canvas に追加したら、 Cloud Manager を使用して、互換性のある Astra Trident インストールまたは Astra Trident インストールを確認できます。最新バージョンの 4 つの Astra Trident が必要です。 
 ---
-= Astra Trident をインストール
+= Astra Tridentのインストールまたはアップグレード
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,12 +14,17 @@ summary: Managed Kubernetes クラスタを Canvas に追加したら、 Cloud M
 
 
 [role="lead"]
-Managed Kubernetes クラスタを Canvas に追加したら、 Cloud Manager を使用して、互換性のある Astra Trident インストールまたは Astra Trident インストールを確認できます。最新バージョンの 4 つの Astra Trident が必要です。
+管理対象のKubernetesクラスタをCanvasに追加したら、Cloud Managerを使用して、互換性のあるAstra Tridentインストールを確認したり、Astra Tridentを最新バージョンにインストールまたはアップグレードしたりできます。
 
+[NOTE]
+====
+* Astra Trident がインストールされていない場合や、互換性のないバージョンの Astra Trident がインストールされている場合は、クラスタに必要な処理があることが表示されます。
+* Tridentオペレータを使用して導入された、最新の4つのバージョンのAstra Tridentのうちの1つ（手動またはHelmチャートを使用）が必要です。
+* tridentctlを使用して導入されたAstra Tridentはサポートされていません。tridentctlを使用してAstra Tridentを導入した場合、Cloud Managerを使用してKubernetesクラスタを管理することはできません。実行する必要があります link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/uninstall-trident.html#uninstall-by-using-tridentctl["tridentctlを使用してアンインストールします"^] 再インストールしてください link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["Trident演算子を使用する"^] または、以下の手順を使用してください。
+
+
+====
 Astra Trident の詳細については、を参照してください link:https://docs.netapp.com/us-en/trident/index.html["Astra Trident のドキュメント"^]。
-
-
-NOTE: Astra Trident がインストールされていない場合や、互換性のないバージョンの Astra Trident がインストールされている場合は、クラスタに必要な処理があることが表示されます。
 
 .手順
 . キャンバスで Kubernetes 作業環境をダブルクリックするか、 * 作業環境の入力 * をクリックします。
@@ -28,7 +33,7 @@ NOTE: Astra Trident がインストールされていない場合や、互換性
 +
 image:screenshot-k8s-install-trident.png["Kubernetes のリソースページのスクリーンショットには、 Astra Trident のインストール用ボタンと Astra Trident のインストール用ボタンが表示されていません。"]
 
-.. Astra Trident のバックレベルバージョンがインストールされている場合は、 https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-trident.html["アップグレード手順については、 Astra Trident のドキュメントを参照"^]。
+.. サポートされていないバージョンのAstra Tridentがインストールされている場合は、* Tridentのアップグレード*をクリックします。
 +
 image:screenshot-k8s-upgrade-trident.png["Astra Trident のアップグレードプロセスのスクリーンショット"]
 

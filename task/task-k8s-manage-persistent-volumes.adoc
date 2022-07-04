@@ -14,7 +14,7 @@ summary: 管理対象の Kubernetes クラスタを Canvas に追加すると、
 
 
 [role="lead"]
-管理対象の Kubernetes クラスタを Canvas に追加すると、 Cloud Manager を使用して永続ボリュームを表示できます。
+カンバスに管理対象のKubernetesクラスタを追加すると、Cloud Managerを使用して永続ボリュームを表示できるようになります。
 
 .手順
 . キャンバスで Kubernetes 作業環境をダブルクリックするか、 * 作業環境の入力 * をクリックします。

@@ -18,6 +18,20 @@ Cloud Manager の Kubernetes の新機能をご確認ください。
 
 
 
+== 2022年7月3日
+
+* Tridentオペレータを使用してAstra Tridentを導入した場合、Cloud Managerで最新バージョンのAstra Tridentにアップグレードできるようになりました。
++
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["Astra Tridentをインストールして管理"]
+
+* KubernetesクラスタをドラッグしてAWS FSX for ONTAP 作業環境にドロップし、ストレージクラスをキャンバスから直接追加できるようになりました。
++
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["ストレージクラスを追加します"]
+
+
+
+
+
 == 2022年6月6日
 
 Cloud ManagerがバックエンドストレージとしてAmazon FSX for ONTAP をサポートするようになりました。

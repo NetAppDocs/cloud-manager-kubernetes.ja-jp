@@ -14,7 +14,7 @@ summary: 管理対象 - Kubernetes クラスタをキャンバスに追加した
 
 
 [role="lead"]
-管理対象 - Kubernetes クラスタをキャンバスに追加したら、 Cloud Manager を使用してワークスペースからクラスタを削除できます。
+カンバスに管理対象のKubernetesクラスタを追加したら、Cloud Managerを使用してワークスペースからクラスタを削除できます。
 
 .手順
 . キャンバスで Kubernetes 作業環境をダブルクリックするか、 * 作業環境の入力 * をクリックします。

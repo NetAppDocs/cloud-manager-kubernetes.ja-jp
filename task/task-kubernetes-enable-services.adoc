@@ -14,9 +14,9 @@ summary: 管理対象の Kubernetes クラスタを Canvas に追加すると、
 
 
 [role="lead"]
-管理対象の Kubernetes クラスタを Canvas に追加すると、ネットアップのクラウドデータサービスを使用して高度なデータ管理を行うことができます。
+管理対象のKubernetesクラスタをCanvasに追加すると、ネットアップのクラウドデータサービスを使用して高度なデータ管理を行うことができます。
 
-現時点では、 Kubernetes クラスタで Cloud Backup がサポートされます。Cloud Backup を使用して、永続ボリュームをオブジェクトストレージにバックアップできます。
+Cloud Backup を使用して、永続ボリュームをオブジェクトストレージにバックアップできます。
 
 link:https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-kubernetes-backup-to-cloud.html["Cloud Backup を使用して Kubernetes クラスタのデータを保護する方法について説明します"^]。
 

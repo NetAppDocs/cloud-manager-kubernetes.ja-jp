@@ -58,7 +58,7 @@ sidebar:
   - title: Kubernetes クラスタを管理
     url: "/concept-manage-k8s.html"
     entries:
-    - title: Astra Trident をインストール
+    - title: Astra Tridentのインストールまたはアップグレード
       url: "/task/task-k8s-manage-trident.html"
     - title: ストレージクラスを管理する
       url: "/task/task-k8s-manage-storage-classes.html"

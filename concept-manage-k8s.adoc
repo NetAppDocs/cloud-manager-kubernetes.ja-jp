@@ -13,7 +13,10 @@ summary: Cloud Manager を使用して、 Astra Trident のインストール、
 :imagesdir: ./media/
 
 
-Cloud Manager を使用して、 Astra Trident のインストール、ストレージクラスの設定、クラスタの削除、データサービスの有効化を行うことができます。
+Cloud Managerを使用して、Astra Tridentのインストールまたはアップグレード、ストレージクラスの設定、クラスタの削除、データサービスの有効化を行うことができます。
+
+
+NOTE: tridentctlを使用して導入されたAstra Tridentはサポートされていません。tridentctlを使用してAstra Tridentを導入した場合、Cloud Managerを使用してKubernetesクラスタを管理することはできません。実行する必要があります link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/uninstall-trident.html#uninstall-by-using-tridentctl["tridentctlを使用してアンインストールします"^] 再インストールしてください link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["Trident演算子を使用する"^] または link:./tasks/task-k8s-manage-trident.html["Cloud Managerを使用"]。
 
 
 
@@ -26,7 +29,7 @@ image:screenshot-k8s-resource-page.png["クラスタの詳細を示す Kubernete
 リソースページでは、次の操作を実行できます。
 
 * Kubernetes クラスタのステータスを表示する
-* Astra Trident がインストールされていることを確認を参照してください link:./task/task-k8s-manage-trident.html["Astra Trident をインストール"]。
+* 互換性のあるバージョンのAstra Tridentがインストールされていることを確認するか、最新バージョンのAstra Tridentにアップグレードしてください。を参照してください link:./task/task-k8s-manage-trident.html["Astra Trident をインストール"]。
 * ストレージクラスを追加および削除する。を参照してください link:./task/task-k8s-manage-storage-classes.html["ストレージクラスを管理する"]。
 * 永続ボリュームを表示します。を参照してください link:./task/task-k8s-manage-persistent-volumes.html["永続ボリュームを表示します"]。
 * Kubernetes クラスタをワークスペースから削除を参照してください link:./task/task-k8s-manage-remove-cluster.html["クラスタを削除"]。

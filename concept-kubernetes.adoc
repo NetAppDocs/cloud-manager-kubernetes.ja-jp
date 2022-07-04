@@ -20,9 +20,9 @@ Astra Trident は、ネットアップが管理している、完全にサポー
 
 == の機能
 
-Kubernetes クラスタは、 Cloud Manager を使用して直接管理できます。
+Tridentのオペレータが、互換性のあるバージョンのAstra Tridentを使用して導入した場合、Cloud Managerを使用してKubernetesクラスタを直接管理できます。
 
-* Astra Trident をインストール
+* Astra Tridentのインストールまたはアップグレード
 * ハイブリッドクラウドインフラの一部としてクラスタを追加、管理
 * ストレージクラスを追加して管理し、作業環境に接続する。
 * Cloud Backup Service を使用して永続ボリュームをバックアップする。
@@ -43,15 +43,17 @@ Cloud Manager は、で実行されるマネージド Kubernetes クラスタを
 
 == サポートされている Astra Trident 環境
 
-最新バージョンの 4 つの Astra Trident が必要です。Trident は Cloud Manager から直接インストールできます。お勧めします link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["前提条件を確認します"^] インストールの前に、
+Astra Tridentの4つの最新バージョンのうちの1つ link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["Tridentオペレータを使用して導入されています"^] は必須です。
 
-Astra Trident をアップグレードするには、 link:https://docs.netapp.com/us-en/trident/trident-managing-k8s/upgrade-operator.html["オペレータにアップグレードしてください"^]。
+最新バージョンのAstra Tridentは、Cloud Managerから直接インストールまたはアップグレードできます。
+
+link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html["Astra Tridentの前提条件を確認"^]
 
 
 
 == サポートされるバックエンドストレージ
 
-ネットアップのAstra Tridentは各Kubernetesクラスタにインストールする必要があり、Cloud Volumes ONTAP またはAmazon FSX for ONTAP はクラスタのバックエンドストレージとして設定する必要があります。
+NetApp Astra Tridentは各Kubernetesクラスタにインストールする必要があります。また、Cloud Volumes ONTAP またはAmazon FSX for ONTAP は、クラスタのバックエンドストレージとして設定する必要があります。
 
 
 
