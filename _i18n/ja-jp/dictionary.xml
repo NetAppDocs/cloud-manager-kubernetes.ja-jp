@@ -54,7 +54,6 @@
   <block id="4b1c304f38c097ba7776b76e4e099d42" category="inline-image-macro">AWS コンソールのスクリーンショットで、 ［ 権限 ］ タブの ［ ポリシーの編集 ］ ボタンが表示されています。</block>
   <block id="f96de5b5f8572ecb3c2c80e8156181f8" category="list-text">JSON * をクリックして、最初のアクションセットに次の権限を追加します。</block>
   <block id="e72ae7637ee4c3c3135530cf7abf3ea9" category="inline-link">ポリシーの完全な JSON 形式を表示します</block>
-  <block id="377d2375cdf41d8fe094ff8bcedcb12b" category="paragraph"><block ref="8eeee6ade5612bec522e249ee65dc7db" category="inline-link-rx"></block>。</block>
   <block id="e42b9312c7c895b2124ac455c7ffecd4" category="list-text">[ ポリシーの確認 ] をクリックし、 [ 変更の保存 ] をクリックします。</block>
   <block id="1fd9ae23d87dd564d70e8a3a729edec0" category="section-title">ネットワーク要件を確認します</block>
   <block id="a5a2f901b1e6769a95c7cafa0f439cd3" category="paragraph">Kubernetes クラスタとコネクタの間、および Kubernetes クラスタとクラスタにバックエンドストレージを提供する Cloud Volumes ONTAP システムとの間にネットワーク接続を提供する必要があります。</block>
@@ -487,4 +486,5 @@
   <block id="7d3743c0dc40fd5a7d78e22b9d4f94d4" category="list-text">サポートされていないバージョンのAstra Tridentがインストールされている場合は、* Tridentのアップグレード*をクリックします。</block>
   <block id="9a0e220ebe1a9271b56057d3ae4b2a8f" category="paragraph">カンバスに管理対象のKubernetesクラスタを追加すると、Cloud Managerを使用してストレージクラスを管理できるようになります。</block>
   <block id="319a42bc8932c7d4f9387e0c5de9c64c" category="list-text">キャンバスから、Kubernetes作業環境をCloud Volumes ONTAP またはAmazon FSX for ONTAP 作業環境にドラッグアンドドロップして、ストレージクラスウィザードを開きます。</block>
+  <block id="622535c1c45bf857c104b24a29a940e1" category="paragraph"><block ref="622535c1c45bf857c104b24a29a940e1" category="inline-link-rx"></block></block>
 </blocks>
